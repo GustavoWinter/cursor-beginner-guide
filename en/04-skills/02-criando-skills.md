@@ -44,25 +44,32 @@ Recommended structure:
 > One-line description: what it does and when to use it.
 
 ## Trigger
+
 Use this skill when:
+
 - The user asks to [action]
 - The user mentions [keyword]
 
 ## Prerequisites
+
 - What must exist before starting
 
 ## Steps
 
 ### 1. Step name
+
 Detailed instructions.
 
 ### 2. Step name
+
 Detailed instructions.
 
 ## Validation
+
 How to verify everything worked.
 
 ## Example
+
 Sample prompt and expected result.
 ```
 
@@ -85,49 +92,57 @@ Contents of `SKILL.md`:
 > Use when the user asks to create a page, screen, or view.
 
 ## Trigger
+
 - "Create a new page"
 - "Add a screen for..."
 - "I need a new view for..."
 
 ## Prerequisites
+
 - Page name
 - Desired route (e.g. /products, /settings)
 
 ## Steps
 
 ### 1. Create the page component
+
 - Location: `src/pages/[PageName]/[PageName].vue`
 - Use `<script setup lang="ts">`
 - Basic structure with title and content slot
 
 ### 2. Create styles file
+
 - Location: `src/pages/[PageName]/[PageName].scss`
 - Root class with BEM
 - Basic layout styles
 
 ### 3. Register the route
+
 - File: `src/router/index.ts`
 - Add route with lazy loading
 - Include meta title
 
 Example:
 {
-  path: '/page-name',
-  name: 'PageName',
-  component: () => import('@/pages/PageName/PageName.vue'),
-  meta: { title: 'Page Title' }
+path: '/page-name',
+name: 'PageName',
+component: () => import('@/pages/PageName/PageName.vue'),
+meta: { title: 'Page Title' }
 }
 
 ### 4. Create i18n file
+
 - Location: `src/i18n/pages/page-name.json`
 - Include at least the page title
 
 ### 5. Create basic test
+
 - Location: `src/pages/[PageName]/__tests__/[PageName].spec.ts`
 - Test that the page renders without error
 - Test that the title appears
 
 ## Validation
+
 - [ ] Component created with default structure
 - [ ] SCSS created with BEM
 - [ ] Route registered with lazy loading
@@ -138,12 +153,14 @@ Example:
 ## Example usage
 
 User prompt:
+
 > Create a new user settings page at /settings
 
 Expected result:
+
 - src/pages/UserSettings/UserSettings.vue
 - src/pages/UserSettings/UserSettings.scss
-- src/pages/UserSettings/__tests__/UserSettings.spec.ts
+- src/pages/UserSettings/**tests**/UserSettings.spec.ts
 - src/i18n/pages/user-settings.json
 - Route /settings added in src/router/index.ts
 ```
@@ -206,6 +223,7 @@ In `SKILL.md`, you can reference:
 
 ```markdown
 ### 1. Create the component
+
 Use `template.vue` as a base and adapt for your case.
 ```
 
@@ -222,6 +240,7 @@ Use `template.vue` as a base and adapt for your case.
    - The result follows your standards
 
 If the skill was not detected, check:
+
 - Is the file named `SKILL.md` (capital letters)?
 - Is the description clear about when to use it?
 - Is the folder under `.cursor/skills/`?

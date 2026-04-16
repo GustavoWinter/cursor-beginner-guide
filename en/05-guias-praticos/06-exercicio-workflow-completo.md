@@ -11,6 +11,7 @@
 You received a real task: add a feature to the project. We will walk the full flow using all concepts and modes.
 
 Pick a simple feature from your project for this exercise. Suggestions:
+
 - Add a field to an existing form
 - Create an empty state component (when there is no data)
 - Add a copy-to-clipboard button
@@ -39,6 +40,7 @@ Do not implement anything — only research.
 ```
 
 ### Checklist before continuing:
+
 - [ ] I understand how the system works today
 - [ ] I know which files will be involved
 - [ ] I know the patterns to follow
@@ -96,6 +98,7 @@ Add specific tests for each step.
 ```
 
 ### Checklist before continuing:
+
 - [ ] Plan is clear and specific
 - [ ] I know exactly which files will be created/changed
 - [ ] Each step is detailed enough
@@ -127,16 +130,19 @@ Start with step 1.
 ### For each step:
 
 **If the result is good:**
+
 ```
 Approved. Proceed to step 2.
 ```
 
 **If it needs adjustment:**
+
 ```
 Almost. Adjust [specific issue] before continuing.
 ```
 
 **If it is wrong:**
+
 ```
 This is not correct. The problem is [describe].
 Revert and try again considering [instruction].
@@ -184,13 +190,13 @@ After completing the flow, reflect:
 
 ### Time
 
-| Phase | Time spent | Was it worth it? |
-| ----- | ---------- | ---------------- |
-| Research (Ask) | __ min | |
-| Planning (Plan) | __ min | |
-| Implementation (Agent) | __ min | |
-| Review and commit | __ min | |
-| **Total** | __ min | |
+| Phase                  | Time spent | Was it worth it? |
+| ---------------------- | ---------- | ---------------- |
+| Research (Ask)         | \_\_ min   |                  |
+| Planning (Plan)        | \_\_ min   |                  |
+| Implementation (Agent) | \_\_ min   |                  |
+| Review and commit      | \_\_ min   |                  |
+| **Total**              | \_\_ min   |                  |
 
 ### Quality
 
@@ -216,12 +222,14 @@ Use this template for future tasks:
 # Task: [name]
 
 ## Phase 1 — Research (Ask Mode)
+
 - [ ] Understand current system
 - [ ] Identify relevant files
 - [ ] Identify patterns to follow
 - [ ] Identify risks and edge cases
 
 ## Phase 2 — Planning (Plan Mode)
+
 - [ ] Define files to create/modify
 - [ ] Define steps in the right order
 - [ ] Define tests
@@ -229,12 +237,14 @@ Use this template for future tasks:
 - [ ] Review and approve plan
 
 ## Phase 3 — Implementation (Agent Mode)
+
 - [ ] New session with clean context
 - [ ] Implement step by step
 - [ ] Review each change
 - [ ] Run tests at each critical step
 
 ## Phase 4 — Wrap-up
+
 - [ ] All tests passing
 - [ ] Linting OK
 - [ ] Commits with descriptive messages
@@ -261,4 +271,4 @@ You completed all exercises. You now know how to:
 - Create your own rules and skills for your workflow
 - Experiment and iterate — that is how you learn
 
-> *“Pick one tool and practice a lot. It is part art and part science — you need repetition to develop intuition about what to trust the model with and what to keep for yourself.”*
+> _“Pick one tool and practice a lot. It is part art and part science — you need repetition to develop intuition about what to trust the model with and what to keep for yourself.”_

@@ -7,7 +7,7 @@
 
 ## Usar IA vs. Trabalhar com IA
 
-A maioria dos desenvolvedores diz que "usa IA para codar mais rapido". Mas se voce perguntar *como* exatamente, poucos conseguem explicar o fluxo real: o que delegam, o que mantem para si, como decidem entre os dois.
+A maioria dos desenvolvedores diz que "usa IA para codar mais rapido". Mas se voce perguntar _como_ exatamente, poucos conseguem explicar o fluxo real: o que delegam, o que mantem para si, como decidem entre os dois.
 
 Essa diferenca importa. Existe um abismo entre:
 
@@ -26,7 +26,6 @@ O modelo mental mais util para trabalhar com o Cursor:
 
 ### O que o agente faz bem
 
-
 | Ponto forte            | Exemplo                                         |
 | ---------------------- | ----------------------------------------------- |
 | **Velocidade**         | Gera centenas de linhas em segundos             |
@@ -34,9 +33,7 @@ O modelo mental mais util para trabalhar com o Cursor:
 | **Conhecimento amplo** | Conhece muitas linguagens, frameworks e padroes |
 | **Incansavel**         | Nao cansa, nao distrai, nao precisa de cafe     |
 
-
 ### O que o agente NAO faz bem
-
 
 | Ponto fraco                | Exemplo                                                        |
 | -------------------------- | -------------------------------------------------------------- |
@@ -45,10 +42,9 @@ O modelo mental mais util para trabalhar com o Cursor:
 | **Confianca excessiva**    | Escreve codigo tecnicamente correto mas contextualmente errado |
 | **Sem visao de sistema**   | Pode quebrar uma integracao que ele nem sabe que existe        |
 
-
 ### Na pratica
 
-Imagine que voce pede ao agente: *"Crie um endpoint de pagamento"*.
+Imagine que voce pede ao agente: _"Crie um endpoint de pagamento"_.
 
 O agente vai gerar um endpoint funcional. Mas ele nao sabe que:
 
@@ -76,14 +72,12 @@ Isso significa:
 
 ### Analogia pratica
 
-
 | Situacao                             | Sem modelo mental | Com modelo mental                               |
 | ------------------------------------ | ----------------- | ----------------------------------------------- |
 | Agente gera codigo errado            | "IA nao funciona" | "Eu nao dei contexto suficiente"                |
 | Agente ignora padrao do projeto      | "IA e burra"      | "Eu preciso criar uma regra para isso"          |
 | Resultado ficou bom de primeira      | "IA e magica"     | "O prompt estava bem especifico"                |
 | Resultado degrade ao longo da sessao | "IA cansou?"      | "O contexto ficou poluido, hora de nova sessao" |
-
 
 ---
 
@@ -92,9 +86,8 @@ Isso significa:
 - O agente e uma ferramenta poderosa, mas **sem julgamento**
 - Voce precisa ser o **diretor do trabalho**, nao apenas um consumidor de sugestoes
 - A qualidade do output depende diretamente da qualidade do **input que voce fornece**
-- Quando o resultado e ruim, a primeira pergunta deve ser: *"O que eu poderia ter feito diferente?"*
+- Quando o resultado e ruim, a primeira pergunta deve ser: _"O que eu poderia ter feito diferente?"_
 
 ---
 
 > **Proximo:** [02 - O que e Contexto](./02-contexto.md) — o conceito mais importante para trabalhar com IA
-

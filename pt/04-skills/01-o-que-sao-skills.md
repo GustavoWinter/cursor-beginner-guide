@@ -15,7 +15,6 @@ Pense em skills como **receitas de bolo** — instrucoes passo a passo para real
 
 ## Regras vs. Skills
 
-
 | Aspecto             | Regras                                         | Skills                                                                             |
 | ------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------- |
 | **O que fazem**     | Definem padroes e convencoes                   | Definem fluxos de trabalho completos                                               |
@@ -25,11 +24,9 @@ Pense em skills como **receitas de bolo** — instrucoes passo a passo para real
 | **Tamanho**         | Geralmente curtas e focadas                    | Geralmente longas e detalhadas                                                     |
 | **Onde ficam**      | `.cursor/rules/`                               | `.cursor/skills/`                                                                  |
 
-
 ---
 
 ## Quando usar Skills
-
 
 | Situacao              | Exemplo de skill                                                  |
 | --------------------- | ----------------------------------------------------------------- |
@@ -38,7 +35,6 @@ Pense em skills como **receitas de bolo** — instrucoes passo a passo para real
 | Padrao complexo       | "Code review" — checklist de validacao com multiplos criterios    |
 | Onboarding            | "Setup do projeto" — passos para configurar ambiente local        |
 | Fluxo de deploy       | "Deploy" — criar branch, atualizar changelog, tag, PR             |
-
 
 ---
 
@@ -61,24 +57,30 @@ Skills ficam em `.cursor/skills/` e seguem esta estrutura:
 > Descricao curta: quando e por que usar esta skill.
 
 ## Quando usar
+
 - Situacao A
 - Situacao B
 
 ## Passos
 
 ### 1. Primeiro passo
+
 Instrucoes detalhadas...
 
 ### 2. Segundo passo
+
 Instrucoes detalhadas...
 
 ### 3. Terceiro passo
+
 Instrucoes detalhadas...
 
 ## Exemplo de uso
+
 Prompt que o usuario pode usar para acionar esta skill.
 
 ## Output esperado
+
 O que o usuario deve receber ao final.
 ```
 
@@ -101,7 +103,7 @@ Se existir uma skill "create-vue-component" cuja descricao diz "Use quando crian
 Voce tambem pode referenciar diretamente:
 
 ```
-Use a skill de criacao de componentes para criar um 
+Use a skill de criacao de componentes para criar um
 componente de lista de notificacoes.
 ```
 
@@ -120,24 +122,29 @@ componente de lista de notificacoes.
 ## Passos
 
 ### 1. Criar o arquivo .vue
+
 - Local: `src/components/[NomeDoComponente].vue`
 - Usar `<script setup lang="ts">`
 - Tipar todas as props e emits
 
 ### 2. Criar o arquivo .scss
+
 - Local: `src/components/[NomeDoComponente].scss`
 - Seguir metodologia BEM
 - Usar apenas classes Tailwind customizadas
 
 ### 3. Criar o arquivo de i18n
+
 - Local: `src/i18n/[feature]/[nome-componente].json`
 - Extrair todos os textos visiveis
 
 ### 4. Criar o arquivo de teste
+
 - Local: `src/components/__tests__/[NomeDoComponente].spec.ts`
 - Cobrir renderizacao, props, eventos
 
 ### 5. Registrar o componente (se necessario)
+
 - Verificar se precisa importar em algum index ou rota
 ```
 
@@ -152,22 +159,26 @@ componente de lista de notificacoes.
 ## Checklist
 
 ### Qualidade de codigo
+
 - [ ] Nomes claros e descritivos
 - [ ] Funcoes com responsabilidade unica
 - [ ] Sem logica duplicada
 
 ### Padroes do projeto
+
 - [ ] Composition API com script setup
 - [ ] BEM para CSS
 - [ ] i18n para textos
 - [ ] SCSS externo
 
 ### Seguranca
+
 - [ ] Sem credenciais hardcoded
 - [ ] Inputs sanitizados
 - [ ] Sem dados sensiveis em logs
 
 ### Testes
+
 - [ ] Testes unitarios para nova logica
 - [ ] Testes existentes passando
 ```
@@ -176,14 +187,12 @@ componente de lista de notificacoes.
 
 ## Skills vs. Repetir instrucoes
 
-
 | Cenario                      | Sem skill                           | Com skill                     |
 | ---------------------------- | ----------------------------------- | ----------------------------- |
 | Criar componente pela 1a vez | Escreve 15 linhas de prompt         | Escreve 15 linhas de prompt   |
 | Criar componente pela 5a vez | Escreve 15 linhas de prompt de novo | "Crie um componente de X"     |
 | Novo membro no time          | Precisa aprender os padroes         | Skill ja documenta o processo |
 | Mudar o padrao               | Atualiza em cada sessao futura      | Atualiza uma vez no SKILL.md  |
-
 
 A partir da **segunda vez** que voce faz algo, considere criar uma skill.
 
@@ -201,7 +210,6 @@ A partir da **segunda vez** que voce faz algo, considere criar uma skill.
 
 ## Resumo
 
-
 | Conceito                | Detalhe                                                   |
 | ----------------------- | --------------------------------------------------------- |
 | **O que sao**           | Fluxos de trabalho reutilizaveis                          |
@@ -210,8 +218,6 @@ A partir da **segunda vez** que voce faz algo, considere criar uma skill.
 | **Diferenca de regras** | Regras = padroes (como), Skills = processos (o que fazer) |
 | **Beneficio**           | Consistencia e velocidade em tarefas repetidas            |
 
-
 ---
 
 > **Proximo:** [02 - Criando Skills](./02-criando-skills.md) — tutorial para criar suas primeiras skills
-

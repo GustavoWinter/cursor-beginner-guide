@@ -139,8 +139,8 @@ Uma regra `.mdc` tem duas partes:
 ```yaml
 ---
 description: Breve descricao do que esta regra faz
-alwaysApply: true          # ou false
-globs: ["**/*.vue"]        # opcional — padrao de arquivo
+alwaysApply: true # ou false
+globs: ["**/*.vue"] # opcional — padrao de arquivo
 ---
 ```
 
@@ -150,12 +150,14 @@ globs: ["**/*.vue"]        # opcional — padrao de arquivo
 # Padroes de Componentes Vue
 
 ## Obrigatorio
+
 - Usar `<script setup lang="ts">`
 - CSS externo em arquivo `.scss` separado
 - Textos via i18n, nunca hardcoded
 - Classes CSS seguindo BEM
 
 ## Proibido
+
 - Nao usar Options API
 - Nao usar CSS inline
 - Nao usar classes Tailwind padrao (usar apenas as customizadas)
@@ -165,7 +167,6 @@ globs: ["**/*.vue"]        # opcional — padrao de arquivo
 
 ## Regras vs. Repetir no prompt
 
-
 | Aspecto      | Repetir no prompt           | Usar regra                 |
 | ------------ | --------------------------- | -------------------------- |
 | Consistencia | Depende de voce lembrar     | Automatico                 |
@@ -173,21 +174,19 @@ globs: ["**/*.vue"]        # opcional — padrao de arquivo
 | Time         | Cada um repete do seu jeito | Todos seguem a mesma regra |
 | Contexto     | Ocupa espaco toda vez       | Carregado inteligentemente |
 
-
 ---
 
 ## Dicas importantes
 
 1. **Comece simples** — uma regra geral com os padroes mais importantes
 2. **Nao exagere** — regras demais poluem o contexto (lembre do capitulo sobre contexto)
-3. **Seja especifico** — *"use BEM"* e melhor que *"escreva CSS bem organizado"*
+3. **Seja especifico** — _"use BEM"_ e melhor que _"escreva CSS bem organizado"_
 4. **Inclua exemplos** — o agente aprende melhor com exemplos concretos
 5. **Atualize conforme aprende** — regras devem evoluir com o projeto
 
 ---
 
 ## Resumo
-
 
 | Conceito       | Detalhe                                              |
 | -------------- | ---------------------------------------------------- |
@@ -197,8 +196,6 @@ globs: ["**/*.vue"]        # opcional — padrao de arquivo
 | **Beneficio**  | Nao precisa repetir padroes a cada sessao            |
 | **Cuidado**    | Regras demais poluem contexto — mantenha enxuto      |
 
-
 ---
 
 > **Proximo:** [02 - Criando Regras](./02-criando-regras.md) — tutorial passo a passo para criar suas primeiras regras
-

@@ -74,7 +74,7 @@ Bring into context **only what is relevant for this step**. Do not load everythi
 
 After a long debugging session, context is full of attempts, errors, and detours. Before continuing:
 
-1. Ask the agent: *“Summarize what we found and what the fix is.”*
+1. Ask the agent: _“Summarize what we found and what the fix is.”_
 2. Read the summary and validate it
 3. Open a **new session** with only the summary as the starting point
 
@@ -84,13 +84,11 @@ After a long debugging session, context is full of attempts, errors, and detours
 
 Split work across separate sessions. Each session should have **one clear task**.
 
-
-| Bad | Good |
-| --- | ---- |
+| Bad                                                           | Good                              |
+| ------------------------------------------------------------- | --------------------------------- |
 | One session for “refactor auth, add tests, and fix login bug” | Session 1: research the login bug |
-| | Session 2: plan the refactor |
-| | Session 3: implement the changes |
-
+|                                                               | Session 2: plan the refactor      |
+|                                                               | Session 3: implement the changes  |
 
 ---
 
@@ -142,15 +140,13 @@ Added on demand:
 
 ## Summary
 
-
-| Concept | Meaning |
-| ------- | ------- |
-| Context is everything | The agent only knows what is in the context window |
-| Less is more | Too much context degrades quality |
-| Garbage in, garbage out | Bad context produces bad results |
-| Persist outside | Use rules, skills, and files to store information |
-| Isolate | One task, one session |
-
+| Concept                 | Meaning                                            |
+| ----------------------- | -------------------------------------------------- |
+| Context is everything   | The agent only knows what is in the context window |
+| Less is more            | Too much context degrades quality                  |
+| Garbage in, garbage out | Bad context produces bad results                   |
+| Persist outside         | Use rules, skills, and files to store information  |
+| Isolate                 | One task, one session                              |
 
 ---
 

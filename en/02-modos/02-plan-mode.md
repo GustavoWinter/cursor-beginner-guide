@@ -22,15 +22,13 @@ Difference from Ask Mode: here the agent goes beyond explaining — it **designs
 
 ## How Ask, Plan, and Agent differ
 
-
-| Aspect | Ask Mode | Plan Mode | Agent Mode |
-| ------ | -------- | --------- | ---------- |
-| Reads files | Yes | Yes | Yes |
-| Explains | Yes | Yes | Yes |
-| Proposes changes | No | Yes | Yes |
-| Executes changes | No | With approval | Automatically |
-| Runs commands | No | No | Yes |
-
+| Aspect           | Ask Mode | Plan Mode     | Agent Mode    |
+| ---------------- | -------- | ------------- | ------------- |
+| Reads files      | Yes      | Yes           | Yes           |
+| Explains         | Yes      | Yes           | Yes           |
+| Proposes changes | No       | Yes           | Yes           |
+| Executes changes | No       | With approval | Automatically |
+| Runs commands    | No       | No            | Yes           |
 
 **Plan Mode is the middle ground:** it thinks and proposes, but waits for you to say “go.”
 
@@ -38,15 +36,13 @@ Difference from Ask Mode: here the agent goes beyond explaining — it **designs
 
 ## When to use Plan Mode
 
-
-| Situation | Why Plan Mode |
-| --------- | ------------- |
+| Situation                | Why Plan Mode                                     |
+| ------------------------ | ------------------------------------------------- |
 | Medium/large new feature | You want to see the plan before code is generated |
-| Refactor | You need to understand impact before changing |
-| Multiple files involved | You want a clear order of changes |
-| Architectural decision | You need to compare approaches |
-| Risky task | You want to validate strategy before executing |
-
+| Refactor                 | You need to understand impact before changing     |
+| Multiple files involved  | You want a clear order of changes                 |
+| Architectural decision   | You need to compare approaches                    |
+| Risky task               | You want to validate strategy before executing    |
 
 ---
 
@@ -119,11 +115,13 @@ A solid Plan Mode plan should include:
 ## Plan: [task name]
 
 ### Files involved
+
 - `src/components/ProductList.vue` — add pagination controls
 - `src/composables/useProducts.ts` — add pagination params
 - `src/api/products.ts` — update API call
 
 ### Steps
+
 1. Update `useProducts.ts` to accept `page` and `pageSize`
 2. Modify the API call in `products.ts`
 3. Add pagination UI in `ProductList.vue`
@@ -131,11 +129,13 @@ A solid Plan Mode plan should include:
 5. Manually test navigation between pages
 
 ### Verification
+
 - [ ] Unit tests passing
 - [ ] Pagination works with 0, 1, and many results
 - [ ] URL reflects current page
 
 ### Out of scope
+
 - Do not change the visual design of the listing
 - Do not implement infinite scroll (future phase)
 ```
@@ -171,28 +171,24 @@ That gives you:
 
 ## Common mistakes in Plan Mode
 
-
-| Mistake | Consequence | Fix |
-| ------- | ----------- | --- |
-| Approving without reading | Agent implements the wrong thing | Always read and validate |
-| Plan too vague | Agent makes assumptions during implementation | Ask for more detail |
-| Plan too large | Hard to implement and review | Split into smaller plans |
-| No scope defined | Agent does more than it should | Always define “out of scope” |
-
+| Mistake                   | Consequence                                   | Fix                          |
+| ------------------------- | --------------------------------------------- | ---------------------------- |
+| Approving without reading | Agent implements the wrong thing              | Always read and validate     |
+| Plan too vague            | Agent makes assumptions during implementation | Ask for more detail          |
+| Plan too large            | Hard to implement and review                  | Split into smaller plans     |
+| No scope defined          | Agent does more than it should                | Always define “out of scope” |
 
 ---
 
 ## Summary
 
-
-| Aspect | Detail |
-| ------ | ------ |
-| **Capability** | Read, analyze, propose (does not run on its own) |
-| **When to use** | Medium/large tasks, refactors, decisions |
-| **Goal** | Have a clear plan before writing code |
-| **Outcome** | Step-by-step plan document |
+| Aspect             | Detail                                                       |
+| ------------------ | ------------------------------------------------------------ |
+| **Capability**     | Read, analyze, propose (does not run on its own)             |
+| **When to use**    | Medium/large tasks, refactors, decisions                     |
+| **Goal**           | Have a clear plan before writing code                        |
+| **Outcome**        | Step-by-step plan document                                   |
 | **Common mistake** | Approving without reading or skipping straight to Agent Mode |
-
 
 ---
 

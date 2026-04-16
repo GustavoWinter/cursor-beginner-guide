@@ -51,16 +51,14 @@ You can also use a keyboard shortcut or type directly in the field.
 
 ## When to use Ask Mode
 
-
-| Situation | Example prompt |
-| --------- | -------------- |
-| **Understand existing code** | *“How does authentication work in this project?”* |
-| **Investigate a bug** | *“What might cause this error? @file-with-error.ts”* |
-| **Compare approaches** | *“What are the pros and cons of Pinia vs composables here?”* |
-| **Learn project patterns** | *“What component patterns does this project use? Show examples.”* |
-| **Prepare a change** | *“If I need to add a new field to the form, which files should I change?”* |
-| **Review a concept** | *“Explain how Vue Router is used in this project.”* |
-
+| Situation                    | Example prompt                                                             |
+| ---------------------------- | -------------------------------------------------------------------------- |
+| **Understand existing code** | _“How does authentication work in this project?”_                          |
+| **Investigate a bug**        | _“What might cause this error? @file-with-error.ts”_                       |
+| **Compare approaches**       | _“What are the pros and cons of Pinia vs composables here?”_               |
+| **Learn project patterns**   | _“What component patterns does this project use? Show examples.”_          |
+| **Prepare a change**         | _“If I need to add a new field to the form, which files should I change?”_ |
+| **Review a concept**         | _“Explain how Vue Router is used in this project.”_                        |
 
 ---
 
@@ -108,11 +106,11 @@ Do not fix it — only explain.
 
 ## Good practices in Ask Mode
 
-1. **Be specific** — Instead of *“how does auth work?”*, ask *“how is the JWT validated in the auth middleware?”*
+1. **Be specific** — Instead of _“how does auth work?”_, ask _“how is the JWT validated in the auth middleware?”_
 2. **Reference files** — Use `@` to point to specific files. That reduces ambiguity and focuses the agent.
-3. **Ask for references** — End with *“show me the relevant files and lines”* for concrete answers.
+3. **Ask for references** — End with _“show me the relevant files and lines”_ for concrete answers.
 4. **Do not rush** — The goal here is to understand, not to solve. Ask as many questions as you need.
-5. **Sanity-check** — Before leaving Ask Mode, ask yourself: *“Do I understand the problem well enough to explain it to someone else?”*
+5. **Sanity-check** — Before leaving Ask Mode, ask yourself: _“Do I understand the problem well enough to explain it to someone else?”_
 
 ---
 
@@ -126,15 +124,13 @@ Do not fix it — only explain.
 
 ## Summary
 
-
-| Aspect | Detail |
-| ------ | ------ |
-| **Capability** | Read and chat only |
-| **When to use** | Before implementing anything |
-| **Goal** | Understand the problem and the system |
-| **Outcome** | You leave knowing exactly what to do |
+| Aspect             | Detail                                          |
+| ------------------ | ----------------------------------------------- |
+| **Capability**     | Read and chat only                              |
+| **When to use**    | Before implementing anything                    |
+| **Goal**           | Understand the problem and the system           |
+| **Outcome**        | You leave knowing exactly what to do            |
 | **Common mistake** | Jumping straight to Agent Mode without research |
-
 
 ---
 

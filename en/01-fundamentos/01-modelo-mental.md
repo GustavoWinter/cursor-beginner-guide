@@ -7,7 +7,7 @@
 
 ## Using AI vs. working with AI
 
-Most developers say they “use AI to code faster.” But if you ask *how*, exactly, few can explain the real flow: what they delegate, what they keep, and how they choose between the two.
+Most developers say they “use AI to code faster.” But if you ask _how_, exactly, few can explain the real flow: what they delegate, what they keep, and how they choose between the two.
 
 That distinction matters. There is a gap between:
 
@@ -26,29 +26,25 @@ The most useful mental model for Cursor:
 
 ### What the agent does well
 
-
-| Strength | Example |
-| -------- | ------- |
-| **Speed** | Generates hundreds of lines in seconds |
-| **No ego** | Rewrites the same code six times without complaining |
-| **Broad knowledge** | Knows many languages, frameworks, and patterns |
-| **Tireless** | Does not get tired, distracted, or need coffee |
-
+| Strength            | Example                                              |
+| ------------------- | ---------------------------------------------------- |
+| **Speed**           | Generates hundreds of lines in seconds               |
+| **No ego**          | Rewrites the same code six times without complaining |
+| **Broad knowledge** | Knows many languages, frameworks, and patterns       |
+| **Tireless**        | Does not get tired, distracted, or need coffee       |
 
 ### What the agent does not do well
 
-
-| Weakness | Example |
-| -------- | ------- |
-| **No judgment** | Does not know whether that endpoint is critical to the business |
-| **No historical context** | Does not know why you chose that architecture three months ago |
-| **Overconfidence** | Writes technically correct but contextually wrong code |
-| **No system view** | Can break an integration it does not even know exists |
-
+| Weakness                  | Example                                                         |
+| ------------------------- | --------------------------------------------------------------- |
+| **No judgment**           | Does not know whether that endpoint is critical to the business |
+| **No historical context** | Does not know why you chose that architecture three months ago  |
+| **Overconfidence**        | Writes technically correct but contextually wrong code          |
+| **No system view**        | Can break an integration it does not even know exists           |
 
 ### In practice
 
-Imagine you ask the agent: *“Create a payment endpoint.”*
+Imagine you ask the agent: _“Create a payment endpoint.”_
 
 It will generate a working endpoint. But it does not know that:
 
@@ -76,14 +72,12 @@ That means:
 
 ### Practical analogy
 
-
-| Situation | Without the mental model | With the mental model |
-| --------- | ------------------------ | ---------------------- |
-| Agent generates wrong code | “AI does not work” | “I did not give enough context” |
-| Agent ignores project patterns | “AI is dumb” | “I need a rule for this” |
-| Result is good on first try | “AI is magic” | “The prompt was very specific” |
-| Quality drops over the session | “AI got tired?” | “Context got noisy — time for a new session” |
-
+| Situation                      | Without the mental model | With the mental model                        |
+| ------------------------------ | ------------------------ | -------------------------------------------- |
+| Agent generates wrong code     | “AI does not work”       | “I did not give enough context”              |
+| Agent ignores project patterns | “AI is dumb”             | “I need a rule for this”                     |
+| Result is good on first try    | “AI is magic”            | “The prompt was very specific”               |
+| Quality drops over the session | “AI got tired?”          | “Context got noisy — time for a new session” |
 
 ---
 
@@ -92,7 +86,7 @@ That means:
 - The agent is a powerful tool, but **it has no judgment**
 - You need to be the **director of the work**, not just a consumer of suggestions
 - Output quality depends directly on the quality of the **input you provide**
-- When the result is bad, the first question should be: *“What could I have done differently?”*
+- When the result is bad, the first question should be: _“What could I have done differently?”_
 
 ---
 

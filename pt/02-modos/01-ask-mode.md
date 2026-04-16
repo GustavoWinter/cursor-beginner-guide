@@ -51,16 +51,14 @@ Voce tambem pode usar o atalho de teclado ou digitar diretamente no campo.
 
 ## Quando usar o Ask Mode
 
-
 | Situacao                        | Exemplo de prompt                                                                         |
 | ------------------------------- | ----------------------------------------------------------------------------------------- |
-| **Entender codigo existente**   | *"Como funciona o sistema de autenticacao neste projeto?"*                                |
-| **Investigar um bug**           | *"O que pode causar este erro? @arquivo-com-erro.ts"*                                     |
-| **Comparar abordagens**         | *"Quais sao os pros e contras de usar Pinia vs composables para este caso?"*              |
-| **Aprender padroes do projeto** | *"Quais padroes de componentes este projeto usa? Me mostre exemplos."*                    |
-| **Preparar uma mudanca**        | *"Se eu precisar adicionar um novo campo no formulario, quais arquivos preciso alterar?"* |
-| **Revisar um conceito**         | *"Me explique como o Vue Router funciona neste projeto."*                                 |
-
+| **Entender codigo existente**   | _"Como funciona o sistema de autenticacao neste projeto?"_                                |
+| **Investigar um bug**           | _"O que pode causar este erro? @arquivo-com-erro.ts"_                                     |
+| **Comparar abordagens**         | _"Quais sao os pros e contras de usar Pinia vs composables para este caso?"_              |
+| **Aprender padroes do projeto** | _"Quais padroes de componentes este projeto usa? Me mostre exemplos."_                    |
+| **Preparar uma mudanca**        | _"Se eu precisar adicionar um novo campo no formulario, quais arquivos preciso alterar?"_ |
+| **Revisar um conceito**         | _"Me explique como o Vue Router funciona neste projeto."_                                 |
 
 ---
 
@@ -108,11 +106,11 @@ Nao corrija — apenas explique.
 
 ## Boas praticas no Ask Mode
 
-1. **Seja especifico** — Em vez de *"como funciona o auth?"*, pergunte *"como o token JWT e validado no middleware de autenticacao?"*
+1. **Seja especifico** — Em vez de _"como funciona o auth?"_, pergunte _"como o token JWT e validado no middleware de autenticacao?"_
 2. **Referencie arquivos** — Use `@` para apontar arquivos especificos. Isso reduz ambiguidade e foca o agente.
-3. **Peca referencias** — Termine com *"me mostre os arquivos e linhas relevantes"* para obter respostas concretas.
+3. **Peca referencias** — Termine com _"me mostre os arquivos e linhas relevantes"_ para obter respostas concretas.
 4. **Nao tenha pressa** — O objetivo aqui e entender, nao resolver. Faca quantas perguntas precisar.
-5. **Valide mentalmente** — Antes de sair do Ask Mode, se pergunte: *"Eu entendo o problema o suficiente para explicar para outra pessoa?"*
+5. **Valide mentalmente** — Antes de sair do Ask Mode, se pergunte: _"Eu entendo o problema o suficiente para explicar para outra pessoa?"_
 
 ---
 
@@ -126,7 +124,6 @@ Nao corrija — apenas explique.
 
 ## Resumo
 
-
 | Aspecto         | Detalhe                                    |
 | --------------- | ------------------------------------------ |
 | **Capacidade**  | Leitura e conversa apenas                  |
@@ -135,8 +132,6 @@ Nao corrija — apenas explique.
 | **Resultado**   | Voce sai sabendo exatamente o que fazer    |
 | **Erro comum**  | Pular direto para Agent Mode sem pesquisar |
 
-
 ---
 
 > **Proximo:** [02 - Plan Mode](./02-plan-mode.md) — desenhando a solucao antes de implementar
-

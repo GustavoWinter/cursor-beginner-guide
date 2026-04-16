@@ -33,18 +33,16 @@ Create a simple Vue component called AlertBanner that:
 
 Look at the result and note:
 
-
-| Criterion | What did the agent do? |
-| --------- | ---------------------- |
-| Composition API or Options API? | |
-| TypeScript? | |
-| Where is CSS? (inline, scoped, external) | |
-| Any CSS methodology? (BEM, etc.) | |
-| Hardcoded strings or i18n? | |
-| Test file created? | |
-| Which folder for the component? | |
-| Typed props? | |
-
+| Criterion                                | What did the agent do? |
+| ---------------------------------------- | ---------------------- |
+| Composition API or Options API?          |                        |
+| TypeScript?                              |                        |
+| Where is CSS? (inline, scoped, external) |                        |
+| Any CSS methodology? (BEM, etc.)         |                        |
+| Hardcoded strings or i18n?               |                        |
+| Test file created?                       |                        |
+| Which folder for the component?          |                        |
+| Typed props?                             |                        |
 
 **Do not accept the changes. Only take notes.**
 
@@ -57,7 +55,7 @@ Look at the result and note:
 1. Restore `.cursor/rules` (rename back)
 2. If you have no rules yet, create a basic one. Open a new session in Agent Mode:
 
-```
+````
 Create a file .cursor/rules/components.mdc with the following content:
 
 ---
@@ -103,7 +101,7 @@ const emit = defineEmits<{
   close: []
 }>()
 </script>
-```
+````
 
 3. Open a **new session** (important — clean context)
 
@@ -121,16 +119,16 @@ Create a simple Vue component called AlertBanner that:
 
 Note the same criteria:
 
-| Criterion | Without rules (Part A) | With rules (Part B) |
-| --------- | ---------------------- | ------------------- |
-| Composition API or Options API? | | |
-| TypeScript? | | |
-| CSS inline, scoped, or external? | | |
-| CSS methodology (BEM)? | | |
-| i18n for strings? | | |
-| Test created? | | |
-| Component folder? | | |
-| Typed props? | | |
+| Criterion                        | Without rules (Part A) | With rules (Part B) |
+| -------------------------------- | ---------------------- | ------------------- |
+| Composition API or Options API?  |                        |                     |
+| TypeScript?                      |                        |                     |
+| CSS inline, scoped, or external? |                        |                     |
+| CSS methodology (BEM)?           |                        |                     |
+| i18n for strings?                |                        |                     |
+| Test created?                    |                        |                     |
+| Component folder?                |                        |                     |
+| Typed props?                     |                        |                     |
 
 ---
 
@@ -139,6 +137,7 @@ Note the same criteria:
 ### The difference should be clear:
 
 **Without rules:**
+
 - The agent makes **arbitrary** choices
 - May use Options API or Composition API
 - CSS is often inline or scoped
@@ -146,6 +145,7 @@ Note the same criteria:
 - No consistent naming pattern
 
 **With rules:**
+
 - The agent follows **exactly** what the rule defines
 - Composition API with script setup always
 - External SCSS with BEM always

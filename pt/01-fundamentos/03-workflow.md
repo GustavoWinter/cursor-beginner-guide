@@ -9,7 +9,7 @@
 
 A maioria dos desenvolvedores abre o Cursor e escreve algo como:
 
-> *"Implemente um sistema de autenticacao com JWT"*
+> _"Implemente um sistema de autenticacao com JWT"_
 
 O agente obedece. Gera centenas de linhas de codigo. O problema? Ele assumiu:
 
@@ -21,7 +21,7 @@ O agente obedece. Gera centenas de linhas de codigo. O problema? Ele assumiu:
 
 Se alguma dessas suposicoes estiver errada, voce vai gastar **mais tempo corrigindo** do que teria gasto planejando.
 
-> *"Uma linha errada de pesquisa pode gerar centenas de linhas de codigo errado."* — Dex Horthy
+> _"Uma linha errada de pesquisa pode gerar centenas de linhas de codigo errado."_ — Dex Horthy
 
 ---
 
@@ -70,7 +70,7 @@ Me ajude a entender:
 
 **Output esperado:** Um entendimento claro do problema que voce valida como humano.
 
-**Checkpoint humano:** *"Isso bate com o meu entendimento do sistema?"*
+**Checkpoint humano:** _"Isso bate com o meu entendimento do sistema?"_
 
 ---
 
@@ -90,7 +90,7 @@ Me ajude a entender:
 **Exemplo de prompt:**
 
 ```
-Com base no que pesquisamos, crie um plano para adicionar o filtro 
+Com base no que pesquisamos, crie um plano para adicionar o filtro
 de busca na listagem de produtos.
 
 O plano deve incluir:
@@ -102,7 +102,7 @@ O plano deve incluir:
 
 **Output esperado:** Um documento de plano claro e passo-a-passo.
 
-**Checkpoint humano:** *"Os passos fazem sentido? Falta algo? Tem algo fora do escopo?"*
+**Checkpoint humano:** _"Os passos fazem sentido? Falta algo? Tem algo fora do escopo?"_
 
 ---
 
@@ -124,7 +124,7 @@ O plano deve incluir:
 
 ```
 Siga o plano abaixo para implementar o filtro de busca.
-Implemente um passo de cada vez e me mostre o que mudou antes 
+Implemente um passo de cada vez e me mostre o que mudou antes
 de prosseguir para o proximo.
 
 [cole o plano aqui ou referencie o arquivo com @plano.md]
@@ -162,7 +162,6 @@ Quando voce chega na Fase 3, o contexto e so o plano. Sem historico poluido.
 
 Nem toda tarefa precisa das 3 fases. Use seu julgamento:
 
-
 | Tipo de tarefa             | Fluxo recomendado                      |
 | -------------------------- | -------------------------------------- |
 | Corrigir um typo           | Direto no Agent Mode                   |
@@ -173,13 +172,11 @@ Nem toda tarefa precisa das 3 fases. Use seu julgamento:
 | Bug complexo               | Ask (debug) → Plan → Agent             |
 | Mudanca arquitetural       | Ask → Plan → revisao humana → Agent    |
 
-
 A regra geral: **quanto maior o risco de dar errado, mais vale investir em pesquisa e planejamento**.
 
 ---
 
 ## Resumo
-
 
 | Fase        | Modo  | Objetivo       | Output                    |
 | ----------- | ----- | -------------- | ------------------------- |
@@ -187,10 +184,8 @@ A regra geral: **quanto maior o risco de dar errado, mais vale investir em pesqu
 | Planejar    | Plan  | Definir passos | Plano passo-a-passo       |
 | Implementar | Agent | Executar       | Codigo pronto para review |
 
-
-> *"IA nao substitui pensamento. Ela amplifica o pensamento que voce fez — ou a falta dele."* — Dex Horthy
+> _"IA nao substitui pensamento. Ela amplifica o pensamento que voce fez — ou a falta dele."_ — Dex Horthy
 
 ---
 
 > **Proximo:** [02 - Modos do Cursor](../02-modos/01-ask-mode.md) — entenda cada modo em detalhes
-

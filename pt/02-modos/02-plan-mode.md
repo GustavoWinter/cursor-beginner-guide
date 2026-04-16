@@ -22,7 +22,6 @@ A diferenca do Ask Mode: aqui o agente vai alem de explicar — ele **desenha a 
 
 ## Qual a diferenca entre Ask, Plan e Agent?
 
-
 | Aspecto          | Ask Mode | Plan Mode     | Agent Mode      |
 | ---------------- | -------- | ------------- | --------------- |
 | Le arquivos      | Sim      | Sim           | Sim             |
@@ -31,13 +30,11 @@ A diferenca do Ask Mode: aqui o agente vai alem de explicar — ele **desenha a 
 | Executa mudancas | Nao      | Com aprovacao | Automaticamente |
 | Roda comandos    | Nao      | Nao           | Sim             |
 
-
 **Plan Mode e o meio-termo:** ele pensa e propoe, mas espera voce dizer "vai".
 
 ---
 
 ## Quando usar o Plan Mode
-
 
 | Situacao                      | Por que Plan Mode                           |
 | ----------------------------- | ------------------------------------------- |
@@ -46,7 +43,6 @@ A diferenca do Ask Mode: aqui o agente vai alem de explicar — ele **desenha a 
 | Multiplos arquivos envolvidos | Quer saber a ordem das mudancas             |
 | Decisao arquitetural          | Precisa comparar abordagens                 |
 | Tarefa com risco              | Quer validar a estrategia antes de executar |
-
 
 ---
 
@@ -98,7 +94,7 @@ Considere o que o projeto ja usa e recomende uma abordagem.
 ### Planejar correcao de bug
 
 ```
-O filtro de data nao funciona quando o usuario seleciona 
+O filtro de data nao funciona quando o usuario seleciona
 o mesmo dia como inicio e fim.
 
 Planeje a correcao:
@@ -119,11 +115,13 @@ Um plano bem feito pelo Plan Mode deve ter:
 ## Plano: [nome da tarefa]
 
 ### Arquivos envolvidos
+
 - `src/components/ProductList.vue` — adicionar controle de paginacao
 - `src/composables/useProducts.ts` — adicionar parametros de pagina
 - `src/api/products.ts` — atualizar chamada de API
 
 ### Passos
+
 1. Atualizar `useProducts.ts` para aceitar `page` e `pageSize`
 2. Modificar a chamada de API em `products.ts`
 3. Adicionar componente de paginacao em `ProductList.vue`
@@ -131,11 +129,13 @@ Um plano bem feito pelo Plan Mode deve ter:
 5. Testar manualmente a navegacao entre paginas
 
 ### Verificacao
+
 - [ ] Testes unitarios passando
 - [ ] Paginacao funciona com 0, 1 e muitos resultados
 - [ ] URL reflete a pagina atual
 
 ### Fora do escopo
+
 - Nao alterar o design visual da listagem
 - Nao implementar infinite scroll (fase futura)
 ```
@@ -171,7 +171,6 @@ Isso garante:
 
 ## Erros comuns no Plan Mode
 
-
 | Erro                    | Consequencia                           | Solucao                        |
 | ----------------------- | -------------------------------------- | ------------------------------ |
 | Aceitar o plano sem ler | Agente implementa algo errado          | Sempre leia e valide           |
@@ -179,11 +178,9 @@ Isso garante:
 | Plano grande demais     | Dificil de implementar e revisar       | Quebre em planos menores       |
 | Nao definir escopo      | Agente faz mais do que deveria         | Sempre defina "fora do escopo" |
 
-
 ---
 
 ## Resumo
-
 
 | Aspecto         | Detalhe                                                 |
 | --------------- | ------------------------------------------------------- |
@@ -193,8 +190,6 @@ Isso garante:
 | **Resultado**   | Documento de plano passo-a-passo                        |
 | **Erro comum**  | Aceitar o plano sem ler ou pular para Agent Mode direto |
 
-
 ---
 
 > **Proximo:** [03 - Agent Mode](./03-agent-mode.md) — executando mudancas com o agente
-

@@ -21,7 +21,7 @@ Vamos criar uma skill para gerar um componente Vue completo (componente + scss +
 ```
 Crie uma skill em .cursor/skills/create-vue-component/SKILL.md
 
-A skill deve documentar o processo completo de criar um componente Vue 
+A skill deve documentar o processo completo de criar um componente Vue
 neste projeto. Analise os componentes existentes e extraia o padrao.
 
 A skill deve cobrir:
@@ -84,7 +84,6 @@ O agente cria o `.vue` e talvez o `.scss`. Esquece o i18n. Nao cria testes. Colo
 
 O agente segue o checklist completo. Todos os arquivos sao criados. Tudo no lugar certo. Padroes seguidos.
 
-
 | Aspecto          | Sem skill                     | Com skill                        |
 | ---------------- | ----------------------------- | -------------------------------- |
 | Arquivos criados | 1-2                           | 3-4 (todos)                      |
@@ -93,7 +92,6 @@ O agente segue o checklist completo. Todos os arquivos sao criados. Tudo no luga
 | Pasta correta    | Talvez                        | Sim                              |
 | Consistencia     | Varia                         | Sempre igual                     |
 | Tempo do prompt  | Longo (precisa detalhar tudo) | Curto (skill cuida dos detalhes) |
-
 
 ---
 
@@ -119,7 +117,7 @@ Esta skill deve ser usada antes de fazer commit. Ela deve:
    - O que precisa corrigir
    - Sugestao de mensagem de commit
 
-Trigger: "pre-commit review", "revisar antes de commitar", 
+Trigger: "pre-commit review", "revisar antes de commitar",
 "verificar mudancas antes de commit"
 ```
 
@@ -143,7 +141,7 @@ Skills devem evoluir. Pratique melhorar uma skill existente.
 Leia a skill em @.cursor/skills/create-vue-component/SKILL.md
 
 Com base na minha experiencia usando ela, adicione:
-1. Um passo para registrar o componente no barrel export (index.ts) 
+1. Um passo para registrar o componente no barrel export (index.ts)
    se existir
 2. Exemplos de como lidar com props complexas (arrays, objetos)
 3. Um passo para verificar acessibilidade basica (aria-labels, roles)
@@ -193,4 +191,3 @@ Voce fez essa tarefa antes?
 ---
 
 > **Proximo:** [06 - Workflow Completo](./06-exercicio-workflow-completo.md) — juntando tudo em um fluxo real
-

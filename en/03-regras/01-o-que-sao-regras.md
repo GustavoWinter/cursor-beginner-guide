@@ -139,8 +139,8 @@ An `.mdc` rule has two parts:
 ```yaml
 ---
 description: Short description of what this rule does
-alwaysApply: true          # or false
-globs: ["**/*.vue"]        # optional — file pattern
+alwaysApply: true # or false
+globs: ["**/*.vue"] # optional — file pattern
 ---
 ```
 
@@ -150,12 +150,14 @@ globs: ["**/*.vue"]        # optional — file pattern
 # Vue component standards
 
 ## Required
+
 - Use `<script setup lang="ts">`
 - External CSS in a separate `.scss` file
 - Strings via i18n, never hardcoded
 - CSS classes following BEM
 
 ## Forbidden
+
 - Do not use Options API
 - Do not use inline CSS
 - Do not use default Tailwind classes (only project custom ones)
@@ -165,14 +167,12 @@ globs: ["**/*.vue"]        # optional — file pattern
 
 ## Rules vs. repeating in the prompt
 
-
-| Aspect | Repeat in prompt | Use a rule |
-| ------ | ---------------- | ---------- |
-| Consistency | Depends on you remembering | Automatic |
-| Maintenance | Spread across N sessions | Centralized in one file |
-| Team | Everyone repeats differently | Everyone follows the same rule |
-| Context | Uses space every time | Loaded intelligently |
-
+| Aspect      | Repeat in prompt             | Use a rule                     |
+| ----------- | ---------------------------- | ------------------------------ |
+| Consistency | Depends on you remembering   | Automatic                      |
+| Maintenance | Spread across N sessions     | Centralized in one file        |
+| Team        | Everyone repeats differently | Everyone follows the same rule |
+| Context     | Uses space every time        | Loaded intelligently           |
 
 ---
 
@@ -180,7 +180,7 @@ globs: ["**/*.vue"]        # optional — file pattern
 
 1. **Start simple** — one general rule with the most important standards
 2. **Do not overdo it** — too many rules pollute context (remember the context chapter)
-3. **Be specific** — *“use BEM”* is better than *“write well-organized CSS”*
+3. **Be specific** — _“use BEM”_ is better than _“write well-organized CSS”_
 4. **Include examples** — the agent learns better from concrete examples
 5. **Update as you learn** — rules should evolve with the project
 
@@ -188,15 +188,13 @@ globs: ["**/*.vue"]        # optional — file pattern
 
 ## Summary
 
-
-| Concept | Detail |
-| ------- | ------ |
-| **What they are** | Persistent instructions for the agent |
-| **Where they live** | `.cursor/rules/*.mdc` |
-| **Types** | Always apply, auto attached, agent requested, manual |
-| **Benefit** | You do not repeat standards every session |
-| **Caution** | Too many rules pollute context — keep them lean |
-
+| Concept             | Detail                                               |
+| ------------------- | ---------------------------------------------------- |
+| **What they are**   | Persistent instructions for the agent                |
+| **Where they live** | `.cursor/rules/*.mdc`                                |
+| **Types**           | Always apply, auto attached, agent requested, manual |
+| **Benefit**         | You do not repeat standards every session            |
+| **Caution**         | Too many rules pollute context — keep them lean      |
 
 ---
 

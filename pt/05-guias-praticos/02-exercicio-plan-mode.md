@@ -25,7 +25,7 @@ Voce ja pesquisou e entendeu o sistema (Exercicio 1). Agora vai criar um **plano
 ### Prompt para copiar e colar:
 
 ```
-Com base no que existe neste projeto, crie um plano para 
+Com base no que existe neste projeto, crie um plano para
 adicionar [FEATURE/MUDANCA].
 
 O plano deve incluir:
@@ -181,4 +181,3 @@ Formate de forma clara com:
 Com o plano pronto, vamos **implementar**.
 
 > **Proximo:** [03 - Exercicio Agent Mode](./03-exercicio-agent-mode.md)
-

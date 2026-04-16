@@ -74,7 +74,7 @@ Traga para o contexto **apenas o que e relevante para este passo**. Nao carregue
 
 Depois de uma sessao longa de debug, o contexto esta cheio de tentativas, erros e voltas. Antes de prosseguir:
 
-1. Peca ao agente: *"Resuma o que descobrimos e qual e a solucao"*
+1. Peca ao agente: _"Resuma o que descobrimos e qual e a solucao"_
 2. Leia o resumo e valide
 3. Abra uma **nova sessao** com apenas o resumo como ponto de partida
 
@@ -84,13 +84,11 @@ Depois de uma sessao longa de debug, o contexto esta cheio de tentativas, erros 
 
 Divida trabalho em sessoes separadas. Cada sessao deve ter **uma tarefa clara**.
 
-
 | Ruim                                                                                       | Bom                                |
 | ------------------------------------------------------------------------------------------ | ---------------------------------- |
 | Uma sessao para "refatorar o sistema de auth e adicionar testes e corrigir o bug do login" | Sessao 1: pesquisar o bug do login |
 |                                                                                            | Sessao 2: planejar a refatoracao   |
 |                                                                                            | Sessao 3: implementar as mudancas  |
-
 
 ---
 
@@ -142,7 +140,6 @@ Adicionado sob demanda:
 
 ## Resumo
 
-
 | Conceito             | O que significa                                       |
 | -------------------- | ----------------------------------------------------- |
 | Contexto e tudo      | O agente so sabe o que esta na janela de contexto     |
@@ -151,8 +148,6 @@ Adicionado sob demanda:
 | Persista fora        | Use regras, skills e arquivos para guardar informacao |
 | Isole                | Uma tarefa, uma sessao                                |
 
-
 ---
 
 > **Proximo:** [03 - O Workflow Pesquisar → Planejar → Implementar](./03-workflow.md)
-

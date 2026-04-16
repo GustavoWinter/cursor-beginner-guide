@@ -114,7 +114,7 @@ NAO implemente nada — apenas pesquise e responda.
 ### Prompt para copiar e colar:
 
 ```
-Preciso implementar [PROBLEMA]. 
+Preciso implementar [PROBLEMA].
 Quais abordagens faria sentido neste projeto?
 
 Compare pelo menos 2 opcoes, considerando:
@@ -150,4 +150,3 @@ Depois destes exercicios, voce deve ter percebido que:
 Agora que voce sabe pesquisar, vamos **planejar**.
 
 > **Proximo:** [02 - Exercicio Plan Mode](./02-exercicio-plan-mode.md)
-

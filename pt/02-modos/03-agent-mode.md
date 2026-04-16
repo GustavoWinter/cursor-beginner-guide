@@ -24,7 +24,6 @@ Este e o modo onde codigo e realmente escrito e mudancas acontecem.
 
 ## Quando usar o Agent Mode
 
-
 | Situacao                           | Exemplo                                                     |
 | ---------------------------------- | ----------------------------------------------------------- |
 | **Implementar um plano**           | Voce ja pesquisou e planejou, agora e hora de executar      |
@@ -32,11 +31,9 @@ Este e o modo onde codigo e realmente escrito e mudancas acontecem.
 | **Executar com instrucoes claras** | Voce sabe exatamente o que quer e consegue descrever        |
 | **Gerar codigo boilerplate**       | Criar um componente seguindo um padrao existente            |
 
-
 ---
 
 ## Quando NAO usar o Agent Mode (direto)
-
 
 | Situacao                                    | Modo recomendado   |
 | ------------------------------------------- | ------------------ |
@@ -44,7 +41,6 @@ Este e o modo onde codigo e realmente escrito e mudancas acontecem.
 | A tarefa e complexa e ambigua               | Plan Mode primeiro |
 | Voce quer explorar opcoes                   | Ask ou Plan Mode   |
 | Voce nao sabe quais arquivos serao afetados | Ask Mode primeiro  |
-
 
 **Regra de ouro:** Se voce nao consegue explicar para um colega o que precisa ser feito, voce nao esta pronto para o Agent Mode.
 
@@ -87,14 +83,14 @@ O campo deve ser obrigatorio e aceitar apenas numeros.
 ```
 Implemente o plano descrito em @plans/paginacao.md
 
-Siga os passos na ordem. Depois de cada passo, me mostre 
+Siga os passos na ordem. Depois de cada passo, me mostre
 o que mudou antes de continuar.
 ```
 
 ### Corrigir um bug especifico
 
 ```
-O botao de "Salvar" no componente @src/components/UserForm.vue 
+O botao de "Salvar" no componente @src/components/UserForm.vue
 nao esta desabilitando durante o envio do formulario.
 
 Corrija isso adicionando um estado de loading que:
@@ -106,7 +102,7 @@ Corrija isso adicionando um estado de loading que:
 ### Gerar codigo seguindo padrao existente
 
 ```
-Crie um novo composable useCategories seguindo o mesmo padrao 
+Crie um novo composable useCategories seguindo o mesmo padrao
 de @src/composables/useProducts.ts
 
 Deve buscar categorias da API /api/categories e retornar:
@@ -153,7 +149,6 @@ Commits frequentes permitem reverter mudancas especificas sem perder tudo.
 
 Voce pode configurar o que o agente pode fazer automaticamente no Cursor:
 
-
 | Acao              | Recomendacao para iniciantes  |
 | ----------------- | ----------------------------- |
 | Ler arquivos      | Permitir                      |
@@ -161,7 +156,6 @@ Voce pode configurar o que o agente pode fazer automaticamente no Cursor:
 | Rodar comandos    | Revisar caso a caso           |
 | Instalar pacotes  | Aprovar manualmente           |
 | Fazer commits     | Aprovar manualmente           |
-
 
 Comece conservador e va liberando conforme ganha confianca.
 
@@ -171,7 +165,7 @@ Comece conservador e va liberando conforme ganha confianca.
 
 1. **De instrucoes claras** — quanto mais especifico, melhor o resultado
 2. **Referencie arquivos** — use `@` para apontar exatamente onde o agente deve trabalhar
-3. **Peca passo a passo** — *"faca um passo de cada vez e me mostre antes de continuar"*
+3. **Peca passo a passo** — _"faca um passo de cada vez e me mostre antes de continuar"_
 4. **Revise tudo** — nunca aceite mudancas sem ler o diff
 5. **Commite frequentemente** — commits pequenos sao mais faceis de reverter
 6. **Comece nova sessao para nova tarefa** — nao reutilize sessoes longas
@@ -180,7 +174,6 @@ Comece conservador e va liberando conforme ganha confianca.
 
 ## Erros comuns no Agent Mode
 
-
 | Erro                     | O que acontece                            | Como evitar               |
 | ------------------------ | ----------------------------------------- | ------------------------- |
 | Prompt vago              | Agente assume e gera codigo que nao serve | Seja especifico           |
@@ -188,7 +181,6 @@ Comece conservador e va liberando conforme ganha confianca.
 | Sessao muito longa       | Qualidade degrada                         | Nova sessao a cada tarefa |
 | Aceitar tudo de uma vez  | Dificil reverter se algo esta errado      | Commite por partes        |
 | Nao referenciar arquivos | Agente pode alterar arquivos errados      | Use `@` sempre            |
-
 
 ---
 
@@ -213,7 +205,6 @@ Pense no Git como seu **primeiro code review** antes do PR ir para o time.
 
 ## Resumo
 
-
 | Aspecto         | Detalhe                                    |
 | --------------- | ------------------------------------------ |
 | **Capacidade**  | Leitura, escrita, execucao — tudo          |
@@ -222,8 +213,6 @@ Pense no Git como seu **primeiro code review** antes do PR ir para o time.
 | **Resultado**   | Codigo pronto para commit e review         |
 | **Erro comum**  | Usar sem pesquisar/planejar antes          |
 
-
 ---
 
 > **Proximo:** [03 - Regras](../03-regras/01-o-que-sao-regras.md) — ensinando o agente a seguir os padroes do seu projeto
-

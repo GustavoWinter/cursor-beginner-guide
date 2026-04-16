@@ -44,25 +44,32 @@ A estrutura recomendada:
 > Descricao em uma linha: o que faz e quando usar.
 
 ## Trigger
+
 Use esta skill quando:
+
 - O usuario pede para [acao]
 - O usuario menciona [palavra-chave]
 
 ## Pre-requisitos
+
 - O que precisa existir antes de comecar
 
 ## Passos
 
 ### 1. Nome do passo
+
 Instrucoes detalhadas.
 
 ### 2. Nome do passo
+
 Instrucoes detalhadas.
 
 ## Validacao
+
 Como verificar se tudo deu certo.
 
 ## Exemplo
+
 Prompt de exemplo e resultado esperado.
 ```
 
@@ -85,49 +92,57 @@ Conteudo do `SKILL.md`:
 > Use quando o usuario pedir para criar uma pagina, tela ou view.
 
 ## Trigger
+
 - "Crie uma nova pagina"
 - "Adicione uma tela de..."
 - "Preciso de uma nova view para..."
 
 ## Pre-requisitos
+
 - Nome da pagina
 - Rota desejada (ex: /produtos, /configuracoes)
 
 ## Passos
 
 ### 1. Criar o componente da pagina
+
 - Local: `src/pages/[NomeDaPagina]/[NomeDaPagina].vue`
 - Usar `<script setup lang="ts">`
 - Incluir estrutura basica com titulo e slot de conteudo
 
 ### 2. Criar o arquivo de estilos
+
 - Local: `src/pages/[NomeDaPagina]/[NomeDaPagina].scss`
 - Criar classe raiz com BEM
 - Incluir estilos basicos de layout
 
 ### 3. Registrar a rota
+
 - Arquivo: `src/router/index.ts`
 - Adicionar rota com lazy loading
 - Incluir meta title
 
 Exemplo:
 {
-  path: '/nome-da-pagina',
-  name: 'NomeDaPagina',
-  component: () => import('@/pages/NomeDaPagina/NomeDaPagina.vue'),
-  meta: { title: 'Nome da Pagina' }
+path: '/nome-da-pagina',
+name: 'NomeDaPagina',
+component: () => import('@/pages/NomeDaPagina/NomeDaPagina.vue'),
+meta: { title: 'Nome da Pagina' }
 }
 
 ### 4. Criar arquivo de i18n
+
 - Local: `src/i18n/pages/nome-da-pagina.json`
 - Incluir ao menos o titulo da pagina
 
 ### 5. Criar teste basico
+
 - Local: `src/pages/[NomeDaPagina]/__tests__/[NomeDaPagina].spec.ts`
 - Testar que a pagina renderiza sem erro
 - Testar que o titulo aparece
 
 ## Validacao
+
 - [ ] Componente criado com estrutura padrao
 - [ ] SCSS criado com BEM
 - [ ] Rota registrada com lazy loading
@@ -138,12 +153,14 @@ Exemplo:
 ## Exemplo de uso
 
 Prompt do usuario:
+
 > Crie uma nova pagina de configuracoes do usuario acessivel em /settings
 
 Resultado esperado:
+
 - src/pages/UserSettings/UserSettings.vue
 - src/pages/UserSettings/UserSettings.scss
-- src/pages/UserSettings/__tests__/UserSettings.spec.ts
+- src/pages/UserSettings/**tests**/UserSettings.spec.ts
 - src/i18n/pages/user-settings.json
 - Rota /settings adicionada em src/router/index.ts
 ```
@@ -156,7 +173,7 @@ Voce pode pedir ao agente para criar skills baseadas no que ele observa no proje
 
 ```
 Analise como as paginas existentes sao estruturadas neste projeto.
-Com base nisso, crie uma skill em .cursor/skills/create-page/SKILL.md 
+Com base nisso, crie uma skill em .cursor/skills/create-page/SKILL.md
 que documente o processo completo de criar uma nova pagina.
 
 A skill deve incluir:
@@ -206,6 +223,7 @@ No `SKILL.md`, voce pode referenciar:
 
 ```markdown
 ### 1. Criar o componente
+
 Use o template em `template.vue` como base e adapte para o caso.
 ```
 
@@ -222,6 +240,7 @@ Use o template em `template.vue` como base e adapte para o caso.
    - O resultado segue os padroes
 
 Se a skill nao foi detectada, verifique:
+
 - O arquivo se chama `SKILL.md` (maiusculas)?
 - A descricao e clara sobre quando usar?
 - A pasta esta dentro de `.cursor/skills/`?

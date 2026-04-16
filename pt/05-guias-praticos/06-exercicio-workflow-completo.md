@@ -11,6 +11,7 @@
 Voce recebeu uma tarefa real: adicionar uma funcionalidade no projeto. Vamos percorrer o fluxo completo usando todos os conceitos e modos.
 
 Escolha uma feature simples do seu projeto para este exercicio. Sugestoes:
+
 - Adicionar um campo em um formulario existente
 - Criar um componente de empty state (quando nao ha dados)
 - Adicionar um botao de copiar para clipboard
@@ -39,6 +40,7 @@ Nao implemente nada — apenas pesquise.
 ```
 
 ### Checklist antes de prosseguir:
+
 - [ ] Entendi como o sistema funciona hoje
 - [ ] Sei quais arquivos serao envolvidos
 - [ ] Conheco os padroes a seguir
@@ -55,7 +57,7 @@ Nao implemente nada — apenas pesquise.
 ### Mude para Plan Mode e use este prompt:
 
 ```
-Com base na pesquisa que fizemos, crie um plano de implementacao 
+Com base na pesquisa que fizemos, crie um plano de implementacao
 para [FEATURE].
 
 Estruture assim:
@@ -86,7 +88,7 @@ Leia o plano inteiro e peca ajustes:
 
 ```
 [Se faltou detalhe]
-Detalhe melhor o passo X. Quero saber exatamente quais funcoes 
+Detalhe melhor o passo X. Quero saber exatamente quais funcoes
 criar e quais tipos usar.
 
 [Se esta grande demais]
@@ -97,6 +99,7 @@ Adicione testes especificos para cada passo.
 ```
 
 ### Checklist antes de prosseguir:
+
 - [ ] Plano esta claro e especifico
 - [ ] Sei exatamente quais arquivos serao criados/alterados
 - [ ] Cada passo esta detalhado
@@ -128,16 +131,19 @@ Comece pelo passo 1.
 ### Para cada passo:
 
 **Se o resultado esta bom:**
+
 ```
 Aprovado. Prossiga para o passo 2.
 ```
 
 **Se precisa de ajuste:**
+
 ```
 Quase. Ajuste [problema especifico] antes de prosseguir.
 ```
 
 **Se esta errado:**
+
 ```
 Isso nao esta certo. O problema e [descreva].
 Reverta e tente novamente considerando [instrucao].
@@ -185,13 +191,13 @@ Depois de completar o fluxo, reflita:
 
 ### Tempo
 
-| Fase | Tempo gasto | Valeu a pena? |
-|------|-------------|---------------|
-| Pesquisa (Ask) | __ min | |
-| Planejamento (Plan) | __ min | |
-| Implementacao (Agent) | __ min | |
-| Revisao e commit | __ min | |
-| **Total** | __ min | |
+| Fase                  | Tempo gasto | Valeu a pena? |
+| --------------------- | ----------- | ------------- |
+| Pesquisa (Ask)        | \_\_ min    |               |
+| Planejamento (Plan)   | \_\_ min    |               |
+| Implementacao (Agent) | \_\_ min    |               |
+| Revisao e commit      | \_\_ min    |               |
+| **Total**             | \_\_ min    |               |
 
 ### Qualidade
 
@@ -217,12 +223,14 @@ Use este template para suas proximas tarefas:
 # Tarefa: [nome]
 
 ## Fase 1 — Pesquisa (Ask Mode)
+
 - [ ] Entender o sistema atual
 - [ ] Identificar arquivos relevantes
 - [ ] Identificar padroes a seguir
 - [ ] Identificar riscos e edge cases
 
 ## Fase 2 — Planejamento (Plan Mode)
+
 - [ ] Definir arquivos a criar/alterar
 - [ ] Definir passos na ordem correta
 - [ ] Definir testes
@@ -230,12 +238,14 @@ Use este template para suas proximas tarefas:
 - [ ] Revisar e aprovar plano
 
 ## Fase 3 — Implementacao (Agent Mode)
+
 - [ ] Nova sessao com contexto limpo
 - [ ] Implementar passo a passo
 - [ ] Revisar cada mudanca
 - [ ] Rodar testes a cada passo critico
 
 ## Fase 4 — Finalizacao
+
 - [ ] Todos os testes passando
 - [ ] Linting ok
 - [ ] Commits com mensagens descritivas
@@ -262,4 +272,4 @@ Voce completou todos os exercicios. Agora voce sabe:
 - Crie suas proprias regras e skills para o seu workflow
 - Experimente e itere — e assim que se aprende
 
-> *"Escolha uma ferramenta, pratique muito. E parte arte e parte ciencia — voce precisa de muita repeticao para desenvolver a intuicao do que confiar ao modelo e do que manter para voce."*
+> _"Escolha uma ferramenta, pratique muito. E parte arte e parte ciencia — voce precisa de muita repeticao para desenvolver a intuicao do que confiar ao modelo e do que manter para voce."_

@@ -43,21 +43,25 @@ alwaysApply: true
 # Padroes do Projeto
 
 ## Linguagem e Framework
+
 - Vue 3 com Composition API (`<script setup>`)
 - TypeScript como padrao
 - SCSS externo (nunca CSS inline)
 
 ## Nomenclatura
+
 - Componentes: PascalCase (ex: `ProductCard.vue`)
 - Composables: camelCase com prefixo `use` (ex: `useProducts.ts`)
 - Arquivos de teste: mesmo nome + `.spec.ts` (ex: `ProductCard.spec.ts`)
 
 ## CSS
+
 - Metodologia BEM para classes
 - Usar apenas classes Tailwind customizadas do projeto
 - Nunca usar classes Tailwind padrao
 
 ## i18n
+
 - Todos os textos visiveis ao usuario devem usar i18n
 - Nunca texto hardcoded no template
 ```
@@ -70,7 +74,7 @@ Voce pode usar o proprio agente para criar regras. Este e um otimo caso de uso:
 
 ```
 Analise os componentes existentes neste projeto e crie uma regra
-em .cursor/rules/components.mdc que documente os padroes que 
+em .cursor/rules/components.mdc que documente os padroes que
 encontrar.
 
 A regra deve ter alwaysApply: true e cobrir:
@@ -233,7 +237,6 @@ Se ele nao seguiu, revise a regra — pode estar com `alwaysApply: false` ou a d
 
 ## Erros comuns ao criar regras
 
-
 | Erro                 | Problema                          | Solucao                          |
 | -------------------- | --------------------------------- | -------------------------------- |
 | Regra muito generica | Agente nao sabe o que fazer       | Seja especifico, inclua exemplos |
@@ -241,7 +244,6 @@ Se ele nao seguiu, revise a regra — pode estar com `alwaysApply: false` ou a d
 | Regras conflitantes  | Agente fica confuso               | Revise e unifique                |
 | Sem exemplos         | Agente interpreta errado          | Sempre inclua exemplos de codigo |
 | Frontmatter errado   | Regra nao carrega                 | Verifique YAML e extensao `.mdc` |
-
 
 ---
 
@@ -257,4 +259,3 @@ Se ele nao seguiu, revise a regra — pode estar com `alwaysApply: false` ou a d
 ---
 
 > **Proximo:** [04 - Skills](../04-skills/01-o-que-sao-skills.md) — automatizando workflows com skills
-

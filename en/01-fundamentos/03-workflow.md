@@ -9,7 +9,7 @@
 
 Most developers open Cursor and write something like:
 
-> *“Implement an authentication system with JWT.”*
+> _“Implement an authentication system with JWT.”_
 
 The agent complies. It generates hundreds of lines of code. The problem? It assumed:
 
@@ -21,7 +21,7 @@ The agent complies. It generates hundreds of lines of code. The problem? It assu
 
 If any assumption is wrong, you will spend **more time fixing** than you would have spent planning.
 
-> *“One wrong line of research can generate hundreds of lines of wrong code.”* — Dex Horthy
+> _“One wrong line of research can generate hundreds of lines of wrong code.”_ — Dex Horthy
 
 ---
 
@@ -70,7 +70,7 @@ Help me understand:
 
 **Expected output:** A clear understanding of the problem that you validate as a human.
 
-**Human checkpoint:** *“Does this match how I understand the system?”*
+**Human checkpoint:** _“Does this match how I understand the system?”_
 
 ---
 
@@ -102,7 +102,7 @@ The plan should include:
 
 **Expected output:** A clear, step-by-step plan document.
 
-**Human checkpoint:** *“Do the steps make sense? Is anything missing? Anything out of scope?”*
+**Human checkpoint:** _“Do the steps make sense? Is anything missing? Anything out of scope?”_
 
 ---
 
@@ -162,17 +162,15 @@ By Phase 3, context is basically the plan — no polluted history.
 
 Not every task needs all three phases. Use judgment:
 
-
-| Task type | Recommended flow |
-| --------- | ---------------- |
-| Fix a typo | Straight to Agent Mode |
-| Add a simple field | Ask → Agent |
-| Small new feature | Ask → Agent |
-| Medium/large new feature | Ask → Plan → Agent |
-| Large refactor | Ask → Plan → Agent (multiple sessions) |
-| Complex bug | Ask (debug) → Plan → Agent |
-| Architectural change | Ask → Plan → human review → Agent |
-
+| Task type                | Recommended flow                       |
+| ------------------------ | -------------------------------------- |
+| Fix a typo               | Straight to Agent Mode                 |
+| Add a simple field       | Ask → Agent                            |
+| Small new feature        | Ask → Agent                            |
+| Medium/large new feature | Ask → Plan → Agent                     |
+| Large refactor           | Ask → Plan → Agent (multiple sessions) |
+| Complex bug              | Ask (debug) → Plan → Agent             |
+| Architectural change     | Ask → Plan → human review → Agent      |
 
 **Rule of thumb:** **the higher the risk of getting it wrong, the more research and planning are worth it.**
 
@@ -180,15 +178,13 @@ Not every task needs all three phases. Use judgment:
 
 ## Summary
 
+| Phase     | Mode  | Goal         | Output                |
+| --------- | ----- | ------------ | --------------------- |
+| Research  | Ask   | Understand   | Validated diagnosis   |
+| Plan      | Plan  | Define steps | Step-by-step plan     |
+| Implement | Agent | Execute      | Code ready for review |
 
-| Phase | Mode | Goal | Output |
-| ----- | ---- | ---- | ------ |
-| Research | Ask | Understand | Validated diagnosis |
-| Plan | Plan | Define steps | Step-by-step plan |
-| Implement | Agent | Execute | Code ready for review |
-
-
-> *“AI does not replace thinking. It amplifies the thinking you did — or the lack of it.”* — Dex Horthy
+> _“AI does not replace thinking. It amplifies the thinking you did — or the lack of it.”_ — Dex Horthy
 
 ---
 

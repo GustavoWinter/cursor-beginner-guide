@@ -33,7 +33,6 @@ Crie um componente Vue simples chamado AlertBanner que:
 
 Olhe o resultado e anote:
 
-
 | Criterio                                      | O que o agente fez? |
 | --------------------------------------------- | ------------------- |
 | Usou Composition API ou Options API?          |                     |
@@ -44,7 +43,6 @@ Olhe o resultado e anote:
 | Criou arquivo de teste?                       |                     |
 | Em qual pasta criou o componente?             |                     |
 | Tipou as props?                               |                     |
-
 
 **Nao aceite as mudancas. Apenas anote.**
 
@@ -57,7 +55,7 @@ Olhe o resultado e anote:
 1. Restaure a pasta `.cursor/rules` (renomeie de volta)
 2. Se voce nao tem regras ainda, crie uma regra basica. Abra uma nova sessao em Agent Mode:
 
-```
+````
 Crie um arquivo .cursor/rules/components.mdc com o seguinte conteudo:
 
 ---
@@ -77,7 +75,7 @@ alwaysApply: true
 
 ## Estrutura do arquivo .vue
 1. `<script setup lang="ts">` (primeiro)
-2. `<template>` (segundo)  
+2. `<template>` (segundo)
 3. `<style lang="scss" src="./NomeDoComponente.scss" />` (terceiro)
 
 ## Nomenclatura
@@ -103,7 +101,7 @@ const emit = defineEmits<{
   close: []
 }>()
 </script>
-```
+````
 
 1. Abra uma **nova sessao** (importante! contexto limpo)
 
@@ -122,7 +120,6 @@ Crie um componente Vue simples chamado AlertBanner que:
 
 Anote da mesma forma:
 
-
 | Criterio                        | Sem regra (Parte A) | Com regra (Parte B) |
 | ------------------------------- | ------------------- | ------------------- |
 | Composition API ou Options API? |                     |                     |
@@ -133,7 +130,6 @@ Anote da mesma forma:
 | Criou teste?                    |                     |                     |
 | Pasta do componente?            |                     |                     |
 | Props tipadas?                  |                     |                     |
-
 
 ---
 
@@ -232,4 +228,3 @@ Crie testes unitarios para o componente AlertBanner.
 ---
 
 > **Proximo:** [05 - Exercicio Skills](./05-exercicio-skills.md) — automatizando tarefas com skills
-

@@ -1,18 +1,10 @@
-# Cursor para Desenvolvedores — Guia
+# Cursor for Developers — guide
 
-Este repositório contém o mesmo guia em dois idiomas. Abra o README dentro de cada pasta para navegar por todos os capítulos.
+Hands-on material for using **Cursor** well: mental model, context, Ask / Plan / Agent modes, project **rules**, **skills**, and chapter-by-chapter exercises. The same guide lives in two language folders; pick one and read from its README.
 
-| Idioma | README |
-| --------- | ------------------------------ |
-| Português | [pt/README.md](./pt/README.md) |
-| Inglês    | [en/README.md](./en/README.md) |
+| Language      | Table of contents                |
+| ------------- | -------------------------------- |
+| **Português** | [`pt/README.md`](./pt/README.md) |
+| **English**   | [`en/README.md`](./en/README.md) |
 
-# Cursor for Developers — Guide
-
-This repository contains the same guide in two languages. Open the README inside each folder to browse all chapters.
-
-
-| Language  | README                         |
-| --------- | ------------------------------ |
-| Portugues | [pt/README.md](./pt/README.md) |
-| English   | [en/README.md](./en/README.md) |
+Links inside `pt/` and `en/` are **relative** (for example `./01-fundamentos/01-modelo-mental.md`), so they work when you browse the repository on GitHub and when you open files locally.

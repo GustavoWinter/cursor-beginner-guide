@@ -84,16 +84,14 @@ The agent creates the `.vue` and maybe `.scss`. Forgets i18n. No tests. Wrong fo
 
 The agent follows the full checklist. All files created. Everything in the right place. Patterns followed.
 
-
-| Aspect | Without skill | With skill |
-| ------ | ------------- | ---------- |
-| Files created | 1–2 | 3–4 (all) |
-| i18n | Often forgotten | Included |
-| Tests | Often forgotten | Included |
-| Correct folder | Maybe | Yes |
-| Consistency | Varies | Same every time |
-| Prompt length | Long (you must specify everything) | Short (skill handles details) |
-
+| Aspect         | Without skill                      | With skill                    |
+| -------------- | ---------------------------------- | ----------------------------- |
+| Files created  | 1–2                                | 3–4 (all)                     |
+| i18n           | Often forgotten                    | Included                      |
+| Tests          | Often forgotten                    | Included                      |
+| Correct folder | Maybe                              | Yes                           |
+| Consistency    | Varies                             | Same every time               |
+| Prompt length  | Long (you must specify everything) | Short (skill handles details) |
 
 ---
 

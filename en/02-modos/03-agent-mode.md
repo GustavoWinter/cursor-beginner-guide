@@ -24,27 +24,23 @@ This is the mode where code is actually written and changes happen.
 
 ## When to use Agent Mode
 
-
-| Situation | Example |
-| --------- | ------- |
-| **Implement a plan** | You already researched and planned — time to execute |
-| **Simple, direct tasks** | Rename a variable, fix a typo, add a field |
-| **Execute with clear instructions** | You know exactly what you want and can describe it |
-| **Generate boilerplate** | Create a component following an existing pattern |
-
+| Situation                           | Example                                              |
+| ----------------------------------- | ---------------------------------------------------- |
+| **Implement a plan**                | You already researched and planned — time to execute |
+| **Simple, direct tasks**            | Rename a variable, fix a typo, add a field           |
+| **Execute with clear instructions** | You know exactly what you want and can describe it   |
+| **Generate boilerplate**            | Create a component following an existing pattern     |
 
 ---
 
 ## When NOT to use Agent Mode (directly)
 
-
-| Situation | Recommended mode |
-| --------- | ---------------- |
-| You do not understand the problem | Ask Mode first |
-| The task is complex and ambiguous | Plan Mode first |
-| You want to explore options | Ask or Plan Mode |
-| You do not know which files will be affected | Ask Mode first |
-
+| Situation                                    | Recommended mode |
+| -------------------------------------------- | ---------------- |
+| You do not understand the problem            | Ask Mode first   |
+| The task is complex and ambiguous            | Plan Mode first  |
+| You want to explore options                  | Ask or Plan Mode |
+| You do not know which files will be affected | Ask Mode first   |
 
 **Golden rule:** If you cannot explain to a coworker what needs to be done, you are not ready for Agent Mode.
 
@@ -153,15 +149,13 @@ Frequent commits let you revert specific changes without losing everything.
 
 You can configure what the agent may do automatically in Cursor:
 
-
-| Action | Beginner recommendation |
-| ------ | ------------------------ |
-| Read files | Allow |
-| Write files | Allow (you review after) |
-| Run commands | Review case by case |
-| Install packages | Approve manually |
-| Make commits | Approve manually |
-
+| Action           | Beginner recommendation  |
+| ---------------- | ------------------------ |
+| Read files       | Allow                    |
+| Write files      | Allow (you review after) |
+| Run commands     | Review case by case      |
+| Install packages | Approve manually         |
+| Make commits     | Approve manually         |
 
 Start conservative and loosen as you gain confidence.
 
@@ -171,7 +165,7 @@ Start conservative and loosen as you gain confidence.
 
 1. **Give clear instructions** — the more specific, the better the result
 2. **Reference files** — use `@` to point exactly where the agent should work
-3. **Ask for step-by-step** — *“do one step at a time and show me before continuing”*
+3. **Ask for step-by-step** — _“do one step at a time and show me before continuing”_
 4. **Review everything** — never accept changes without reading the diff
 5. **Commit often** — small commits are easier to revert
 6. **New session for new tasks** — do not reuse long sessions
@@ -180,15 +174,13 @@ Start conservative and loosen as you gain confidence.
 
 ## Common mistakes in Agent Mode
 
-
-| Mistake | What happens | How to avoid |
-| ------- | ------------ | ------------ |
-| Vague prompt | Agent assumes and generates wrong code | Be specific |
-| Not reading the diff | Bugs slip to production | Always read the diff |
-| Session too long | Quality degrades | New session per task |
-| Accepting everything at once | Hard to revert if wrong | Commit in chunks |
-| Not referencing files | Agent may touch wrong files | Always use `@` |
-
+| Mistake                      | What happens                           | How to avoid         |
+| ---------------------------- | -------------------------------------- | -------------------- |
+| Vague prompt                 | Agent assumes and generates wrong code | Be specific          |
+| Not reading the diff         | Bugs slip to production                | Always read the diff |
+| Session too long             | Quality degrades                       | New session per task |
+| Accepting everything at once | Hard to revert if wrong                | Commit in chunks     |
+| Not referencing files        | Agent may touch wrong files            | Always use `@`       |
 
 ---
 
@@ -213,15 +205,13 @@ Think of Git as your **first code review** before the PR goes to the team.
 
 ## Summary
 
-
-| Aspect | Detail |
-| ------ | ------ |
-| **Capability** | Read, write, execute — everything |
-| **When to use** | Clear tasks, after research/planning |
-| **Goal** | Implement changes in code |
-| **Outcome** | Code ready for commit and review |
+| Aspect             | Detail                                      |
+| ------------------ | ------------------------------------------- |
+| **Capability**     | Read, write, execute — everything           |
+| **When to use**    | Clear tasks, after research/planning        |
+| **Goal**           | Implement changes in code                   |
+| **Outcome**        | Code ready for commit and review            |
 | **Common mistake** | Using it without researching/planning first |
-
 
 ---
 

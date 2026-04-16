@@ -43,21 +43,25 @@ alwaysApply: true
 # Project standards
 
 ## Language and framework
+
 - Vue 3 with Composition API (`<script setup>`)
 - TypeScript by default
 - External SCSS (never inline CSS)
 
 ## Naming
+
 - Components: PascalCase (e.g. `ProductCard.vue`)
 - Composables: camelCase with `use` prefix (e.g. `useProducts.ts`)
 - Test files: same name + `.spec.ts` (e.g. `ProductCard.spec.ts`)
 
 ## CSS
+
 - BEM methodology for classes
 - Use only project custom Tailwind classes
 - Never use default Tailwind classes
 
 ## i18n
+
 - All user-visible strings must use i18n
 - Never hardcoded text in templates
 ```
@@ -232,15 +236,13 @@ If not, review the rule — maybe `alwaysApply: false` or the description is unc
 
 ## Common mistakes when creating rules
 
-
-| Mistake | Problem | Fix |
-| ------- | ------- | --- |
-| Rule too vague | Agent does not know what to do | Be specific, include examples |
-| Too many rules | Pollutes context, hurts quality | Keep only essentials |
-| Conflicting rules | Agent gets confused | Review and unify |
-| No examples | Agent misinterprets | Always include code examples |
-| Wrong frontmatter | Rule does not load | Check YAML and `.mdc` extension |
-
+| Mistake           | Problem                         | Fix                             |
+| ----------------- | ------------------------------- | ------------------------------- |
+| Rule too vague    | Agent does not know what to do  | Be specific, include examples   |
+| Too many rules    | Pollutes context, hurts quality | Keep only essentials            |
+| Conflicting rules | Agent gets confused             | Review and unify                |
+| No examples       | Agent misinterprets             | Always include code examples    |
+| Wrong frontmatter | Rule does not load              | Check YAML and `.mdc` extension |
 
 ---
 

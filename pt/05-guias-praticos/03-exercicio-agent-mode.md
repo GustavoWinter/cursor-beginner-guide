@@ -28,8 +28,8 @@ A chave do Agent Mode e **nao pedir tudo de uma vez**.
 ### Prompt para copiar e colar:
 
 ```
-Vou implementar uma mudanca seguindo um plano. 
-Implemente UM passo de cada vez e me mostre o que mudou 
+Vou implementar uma mudanca seguindo um plano.
+Implemente UM passo de cada vez e me mostre o que mudou
 antes de prosseguir para o proximo.
 
 Plano:
@@ -74,7 +74,7 @@ Pratique referenciar arquivos para dar contexto exato ao agente.
 ### Prompt para copiar e colar:
 
 ```
-Olhe o componente @src/components/[ComponenteExistente].vue 
+Olhe o componente @src/components/[ComponenteExistente].vue
 e crie um novo componente similar chamado [NovoNome].
 
 As diferencas devem ser:
@@ -149,14 +149,14 @@ O agente provavelmente vai:
 **Opcao 1 — Pedir para reverter:**
 
 ```
-Reverta todas as mudancas que voce fez. 
+Reverta todas as mudancas que voce fez.
 Vamos recomecar com instrucoes mais especificas.
 ```
 
 **Opcao 2 — Aceitar parcialmente:**
 
 ```
-A mudanca no arquivo X esta boa, mas as mudancas nos arquivos 
+A mudanca no arquivo X esta boa, mas as mudancas nos arquivos
 Y e Z nao sao o que eu queria. Reverta apenas Y e Z.
 ```
 
@@ -251,4 +251,3 @@ Copie este checklist e use sempre que o agente fizer mudancas:
 Agora vamos ver como **regras** mudam a qualidade do output.
 
 > **Proximo:** [04 - Exercicio Regras](./04-exercicio-regras.md)
-

@@ -6,5 +6,3 @@ Hands-on material for using **Cursor** well: mental model, context, Ask / Plan /
 | ------------- | -------------------------------- |
 | **Português** | [`pt/README.md`](./pt/README.md) |
 | **English**   | [`en/README.md`](./en/README.md) |
-
-Links inside `pt/` and `en/` are **relative** (for example `./01-fundamentos/01-modelo-mental.md`), so they work when you browse the repository on GitHub and when you open files locally.

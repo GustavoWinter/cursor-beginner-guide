@@ -102,38 +102,38 @@ withDefaults(defineProps<Props>(), {
 const emit = defineEmits<{
   close: []
 }>()
+</script>
 ```
 
-```
-3. Abra uma **nova sessao** (importante! contexto limpo)
+1. Abra uma **nova sessao** (importante! contexto limpo)
 
 ### Mesmo prompt:
 
 ```
-
 Crie um componente Vue simples chamado AlertBanner que:
 
 - Recebe um tipo (sucesso, erro, aviso)
 - Recebe uma mensagem
 - Tem um botao de fechar
 - Emite um evento quando fechado
-
 ```
 
 ### O que observar e anotar:
 
 Anote da mesma forma:
 
-| Criterio | Sem regra (Parte A) | Com regra (Parte B) |
-|----------|--------------------|--------------------|
-| Composition API ou Options API? | | |
-| Usou TypeScript? | | |
-| CSS inline, scoped ou externo? | | |
-| Metodologia CSS (BEM)? | | |
-| i18n para textos? | | |
-| Criou teste? | | |
-| Pasta do componente? | | |
-| Props tipadas? | | |
+
+| Criterio                        | Sem regra (Parte A) | Com regra (Parte B) |
+| ------------------------------- | ------------------- | ------------------- |
+| Composition API ou Options API? |                     |                     |
+| Usou TypeScript?                |                     |                     |
+| CSS inline, scoped ou externo?  |                     |                     |
+| Metodologia CSS (BEM)?          |                     |                     |
+| i18n para textos?               |                     |                     |
+| Criou teste?                    |                     |                     |
+| Pasta do componente?            |                     |                     |
+| Props tipadas?                  |                     |                     |
+
 
 ---
 
@@ -142,6 +142,7 @@ Anote da mesma forma:
 ### A diferenca deve ser visivel:
 
 **Sem regras:**
+
 - O agente faz **escolhas arbitrarias**
 - Pode usar Options API ou Composition API
 - CSS provavelmente fica inline ou scoped
@@ -149,6 +150,7 @@ Anote da mesma forma:
 - Sem padrao de nomenclatura consistente
 
 **Com regras:**
+
 - O agente segue **exatamente** o que a regra define
 - Composition API com script setup sempre
 - SCSS externo com BEM sempre
@@ -169,13 +171,12 @@ Crie uma regra que so carrega para arquivos de teste:
 ### Prompt:
 
 ```
-
 Crie um arquivo .cursor/rules/tests.mdc com o conteudo:
 
 ---
-
-## description: Padroes para testes unitarios
+description: Padroes para testes unitarios
 globs: ["**/*.spec.ts", "**/*.test.ts"]
+---
 
 # Padroes de Testes
 
@@ -213,6 +214,7 @@ Crie testes unitarios para o componente AlertBanner.
 ```
 
 ### O que observar:
+
 - A regra de testes foi carregada automaticamente (por causa do `globs`)
 - Os testes seguem o padrao definido
 - Os `it()` estao em portugues conforme a regra
@@ -230,5 +232,4 @@ Crie testes unitarios para o componente AlertBanner.
 ---
 
 > **Proximo:** [05 - Exercicio Skills](./05-exercicio-skills.md) — automatizando tarefas com skills
-```
 

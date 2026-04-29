@@ -1,6 +1,10 @@
 # Cursor for Developers — guide
 
-Hands-on material for using **Cursor** well: mental model, context, Ask / Plan / Agent modes, project **rules**, **skills**, **agent orchestration** (skills, main agent, sub-agents), and chapter-by-chapter exercises. The same guide lives in two language folders; pick one and read from its README.
+Hands-on material for using **Cursor** well. The same guide lives in two language folders; pick one and read from its README.
+
+**Part 1 — Core:** mental model, context, Ask / Plan / Agent modes, project **rules**, **skills**, and chapter-by-chapter **exercises**.
+
+**Part 2 — Agent orchestration:** how **skills**, the **main agent**, and **sub-agents** fit together in predictable workflows (read after Skills; see each language README for structure and reading order).
 
 | Language      | Table of contents                |
 | ------------- | -------------------------------- |

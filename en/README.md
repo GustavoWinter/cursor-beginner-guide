@@ -11,7 +11,9 @@
 
 This material is for developers who are starting with Cursor and want to go beyond the basics. If you already know how to code but have never used an AI agent to write code—or you have, but felt you were not getting the most out of it—this guide is for you.
 
-By the end, you will understand:
+### Part 1 — Core guide
+
+By the end of Part 1, you will understand:
 
 - How to **think** when working with AI (the right mental model)
 - How to use Cursor’s **three modes** (Ask, Agent, Plan)
@@ -19,9 +21,18 @@ By the end, you will understand:
 - How to use **skills** to automate workflows
 - How to apply all of this in practice with real exercises
 
+### Part 2 — Agent orchestration
+
+New material that extends Part 1. You will understand:
+
+- How to combine **skills**, the **main agent**, and **sub-agents** into predictable flows
+- When to use each piece and how to avoid wasting context
+
 ---
 
 ## Guide structure
+
+### Part 1 — Core (foundations through hands-on guides)
 
 ### [01 — Foundations](./01-fundamentos/)
 
@@ -74,14 +85,25 @@ Hands-on exercises to apply what you learned. Each guide has real prompts you ca
 | [05-exercicio-skills.md](./05-guias-praticos/05-exercicio-skills.md)                       | Using skills to automate tasks                 |
 | [06-exercicio-workflow-completo.md](./05-guias-praticos/06-exercicio-workflow-completo.md) | From zero to PR — full workflow                |
 
+### Part 2 — Agent orchestration
+
+Skills, the main agent, and sub-agents work together. This part explains **when** to use each and how to design a flow without wasting context. **Read after Skills (04)** and, if you want orchestration in your exercises, **before the hands-on guides (05)**.
+
+| File                                                                                         | Content                                                         |
+| -------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| [01-agent-orchestration-overview.md](./06-orquestracao-de-agentes/01-agent-orchestration-overview.md) | Concepts: skill, agent, sub-agent, and how they fit             |
+| [02-orquestrando-na-pratica.md](./06-orquestracao-de-agentes/02-orquestrando-na-pratica.md)             | Step-by-step: design and test an orchestrated flow              |
+| [03-pdf-orchestration-example.md](./06-orquestracao-de-agentes/03-pdf-orchestration-example.md)       | Example: large PDF → topics, short & long summary via sub-agents |
+
 ---
 
 ## How to use this guide
 
-1. **Read in order** — each section builds on the previous one
-2. **Do the exercises** — reading about AI does not replace practicing with AI
-3. **Try it in your project** — adapt the examples to your context
-4. **Come back when you need it** — use it as day-to-day reference
+1. **Part 1** — follow **01 → 02 → 03 → 04** in order, then the **hands-on guides (05)** (or mix in exercises however you prefer).
+2. **Part 2** — after **04 — Skills**, read **06 — Agent orchestration**; then return to **05** if you have not finished the guides yet, or use Part 2 as reference when repeating exercises.
+3. **Do the exercises** — reading about AI does not replace practicing with AI
+4. **Try it in your project** — adapt the examples to your context
+5. **Come back when you need it** — use it as day-to-day reference
 
 ---
 

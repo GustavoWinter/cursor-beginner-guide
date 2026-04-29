@@ -11,7 +11,9 @@
 
 Este material foi criado para desenvolvedores que estao comecando a usar o Cursor e querem ir alem do basico. Se voce ja sabe programar mas nunca usou um agente de IA para escrever codigo — ou usou mas sentiu que nao tirou o maximo proveito — este guia e para voce.
 
-Ao final, voce vai entender:
+### Parte 1 — Nucleo do guia
+
+Ao final da Parte 1, voce vai entender:
 
 - Como **pensar** ao trabalhar com IA (o modelo mental correto)
 - Como usar os **3 modos** do Cursor (Ask, Agent, Plan)
@@ -19,9 +21,18 @@ Ao final, voce vai entender:
 - Como usar **skills** para automatizar fluxos de trabalho
 - Como aplicar tudo isso na pratica com exercicios reais
 
+### Parte 2 — Orquestracao de agentes
+
+Material novo que complementa a Parte 1. Voce vai entender:
+
+- Como combinar **skill**, **agente principal** e **sub-agente** em fluxos previsiveis
+- Quando usar cada peca e como evitar desperdicio de contexto
+
 ---
 
 ## Estrutura do Guia
+
+### Parte 1 — Nucleo (fundamentos ate exercicios)
 
 ### [01 - Fundamentos](./01-fundamentos/)
 
@@ -74,14 +85,24 @@ Exercicios hands-on para aplicar tudo que aprendeu. Cada guia tem prompts reais 
 | [05-exercicio-skills.md](./05-guias-praticos/05-exercicio-skills.md)                       | Usando skills para automatizar tarefas      |
 | [06-exercicio-workflow-completo.md](./05-guias-praticos/06-exercicio-workflow-completo.md) | Do zero ao PR — fluxo completo              |
 
+### Parte 2 — Orquestracao de agentes
+
+Skills, o agente principal e sub-agentes se complementam. Esta parte explica **quando** usar cada um e como montar um fluxo sem desperdicar contexto. **Leia apos Skills (04)** e, se quiser aplicar orquestracao nos exercicios, **antes dos Guias Praticos (05)**.
+
+| Arquivo                                                                                    | Conteudo                                                         |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| [01-o-que-e-orquestracao.md](./06-orquestracao-de-agentes/01-o-que-e-orquestracao.md)       | Conceito: skill, agente, sub-agente e papel de cada um           |
+| [02-orquestrando-na-pratica.md](./06-orquestracao-de-agentes/02-orquestrando-na-pratica.md) | Passo a passo para desenhar e testar um fluxo orquestrado         |
+
 ---
 
 ## Como usar este guia
 
-1. **Leia na ordem** — cada secao constroi sobre a anterior
-2. **Faca os exercicios** — ler sobre IA nao substitui praticar com IA
-3. **Experimente no seu projeto** — adapte os exemplos para o seu contexto
-4. **Volte quando precisar** — use como referencia no dia a dia
+1. **Parte 1** — siga **01 → 02 → 03 → 04** na ordem; em seguida os **Guias Praticos (05)** (ou intercale exercicios conforme preferir).
+2. **Parte 2** — apos **04 - Skills**, leia **06 - Orquestracao**; depois volte aos **Guias Praticos (05)** se ainda nao os tiver feito, ou use a Parte 2 como referencia ao repetir exercicios.
+3. **Faca os exercicios** — ler sobre IA nao substitui praticar com IA
+4. **Experimente no seu projeto** — adapte os exemplos para o seu contexto
+5. **Volte quando precisar** — use como referencia no dia a dia
 
 ---
 

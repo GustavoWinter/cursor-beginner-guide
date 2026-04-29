@@ -17,6 +17,7 @@ By the end, you will understand:
 - How to use Cursor’s **three modes** (Ask, Agent, Plan)
 - How to create **rules** so the agent follows your project’s standards
 - How to use **skills** to automate workflows
+- How to **orchestrate** skills, the main agent, and sub-agents into predictable flows
 - How to apply all of this in practice with real exercises
 
 ---
@@ -61,6 +62,15 @@ Skills are reusable workflows the agent runs on demand. Unlike rules (which are 
 | [01-o-que-sao-skills.md](./04-skills/01-o-que-sao-skills.md) | Concept and difference between rules and skills |
 | [02-criando-skills.md](./04-skills/02-criando-skills.md)     | How to create skills step by step               |
 
+### [06 — Agent orchestration](./06-orquestracao-de-agentes/)
+
+Skills, the main agent, and sub-agents work together. This section explains **when** to use each and how to design a flow without wasting context. **Read this before the hands-on guides** if you want to chain skill + agent + sub-agent deliberately.
+
+| File                                                                                         | Content                                                         |
+| -------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| [01-agent-orchestration-overview.md](./06-orquestracao-de-agentes/01-agent-orchestration-overview.md) | Concepts: skill, agent, sub-agent, and how they fit             |
+| [02-orquestrando-na-pratica.md](./06-orquestracao-de-agentes/02-orquestrando-na-pratica.md)             | Step-by-step: design and test an orchestrated flow              |
+
 ### [05 — Hands-on guides](./05-guias-praticos/)
 
 Hands-on exercises to apply what you learned. Each guide has real prompts you can copy, paste, and run.
@@ -78,7 +88,7 @@ Hands-on exercises to apply what you learned. Each guide has real prompts you ca
 
 ## How to use this guide
 
-1. **Read in order** — each section builds on the previous one
+1. **Read in order** — each section builds on the previous one (after Skills, read **06 — Agent orchestration** before the guides in **05**)
 2. **Do the exercises** — reading about AI does not replace practicing with AI
 3. **Try it in your project** — adapt the examples to your context
 4. **Come back when you need it** — use it as day-to-day reference

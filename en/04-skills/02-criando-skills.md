@@ -257,4 +257,4 @@ If the skill was not detected, check:
 
 ---
 
-> **Next:** [05 — Hands-on guides](../05-guias-praticos/01-exercicio-ask-mode.md) — time to practice!
+> **Next:** [06 — Agent orchestration](../06-orquestracao-de-agentes/01-agent-orchestration-overview.md) — skills, main agent, and sub-agents in one flow

@@ -17,6 +17,7 @@ Ao final, voce vai entender:
 - Como usar os **3 modos** do Cursor (Ask, Agent, Plan)
 - Como criar **regras** para o agente seguir os padroes do seu projeto
 - Como usar **skills** para automatizar fluxos de trabalho
+- Como **orquestrar** skill, agente principal e sub-agente em fluxos previsiveis
 - Como aplicar tudo isso na pratica com exercicios reais
 
 ---
@@ -61,6 +62,15 @@ Skills sao fluxos de trabalho reutilizaveis que o agente executa sob demanda. Di
 | [01-o-que-sao-skills.md](./04-skills/01-o-que-sao-skills.md) | Conceito e diferenca entre regras e skills |
 | [02-criando-skills.md](./04-skills/02-criando-skills.md)     | Como criar skills passo a passo            |
 
+### [06 - Orquestracao de Agentes](./06-orquestracao-de-agentes/)
+
+Skills, o agente principal e sub-agentes se complementam. Esta secao explica **quando** usar cada um e como montar um fluxo sem desperdicar contexto. **Leia antes dos guias praticos** se quiser encadear skill + agente + sub-agente de forma consciente.
+
+| Arquivo                                                                                    | Conteudo                                                         |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| [01-o-que-e-orquestracao.md](./06-orquestracao-de-agentes/01-o-que-e-orquestracao.md)       | Conceito: skill, agente, sub-agente e papel de cada um           |
+| [02-orquestrando-na-pratica.md](./06-orquestracao-de-agentes/02-orquestrando-na-pratica.md) | Passo a passo para desenhar e testar um fluxo orquestrado         |
+
 ### [05 - Guias Praticos](./05-guias-praticos/)
 
 Exercicios hands-on para aplicar tudo que aprendeu. Cada guia tem prompts reais para voce copiar, colar e ver o resultado.
@@ -78,7 +88,7 @@ Exercicios hands-on para aplicar tudo que aprendeu. Cada guia tem prompts reais 
 
 ## Como usar este guia
 
-1. **Leia na ordem** — cada secao constroi sobre a anterior
+1. **Leia na ordem** — cada secao constroi sobre a anterior (apos Skills, leia **06 - Orquestracao** antes dos guias em **05**)
 2. **Faca os exercicios** — ler sobre IA nao substitui praticar com IA
 3. **Experimente no seu projeto** — adapte os exemplos para o seu contexto
 4. **Volte quando precisar** — use como referencia no dia a dia

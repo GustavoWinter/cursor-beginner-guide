@@ -257,4 +257,4 @@ Se a skill nao foi detectada, verifique:
 
 ---
 
-> **Proximo:** [05 - Guias Praticos](../05-guias-praticos/01-exercicio-ask-mode.md) — hora de praticar!
+> **Proximo:** [06 - Orquestracao de Agentes](../06-orquestracao-de-agentes/01-o-que-e-orquestracao.md) — skill, agente e sub-agente no mesmo fluxo

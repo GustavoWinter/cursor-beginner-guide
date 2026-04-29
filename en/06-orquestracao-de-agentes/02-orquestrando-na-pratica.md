@@ -76,6 +76,41 @@ Before editing, ask: “Do I need a **wide map** of the repo without loading eve
 - **Yes** — use a **read-only explore** sub-agent: a crisp brief of what to discover (key folders, patterns, similar files).
 - **No** — go straight to the **main agent** with the skill.
 
+If the same specialist role should be **reused** across sessions (verifier, debugger, security review), add a **custom** sub-agent under **`.cursor/agents/`** and commit that folder so everyone gets the same definitions. Full field reference: [Cursor — Subagents](https://cursor.com/docs/subagents).
+
+#### How to create a custom sub-agent (file format)
+
+Each custom sub-agent is **one Markdown file** (for example `.cursor/agents/security-auditor.md`). **YAML frontmatter** at the top tells Cursor the `name`, when to delegate (`description`), and optional behavior (`model`, `readonly`, `is_background`). **Everything after the second `---`** is the prompt the sub-agent runs with (same idea as the [official “File format” section](https://cursor.com/docs/subagents)).
+
+Example (adapt the filename, `name`, and body to your own specialist):
+
+````text
+---
+name: security-auditor
+description: Security specialist. Use when implementing auth, payments, or handling sensitive data.
+model: inherit
+readonly: true
+---
+
+You are a security expert auditing code for vulnerabilities.
+
+When invoked:
+1. Identify security-sensitive code paths
+2. Check for common vulnerabilities (injection, XSS, auth bypass)
+3. Verify secrets are not hardcoded
+4. Review input validation and sanitization
+
+Report findings by severity:
+- Critical (must fix before deploy)
+- High (fix soon)
+- Medium (address when possible)
+````
+
+- **`name`** — identifier; invoke explicitly with `/security-auditor` in the prompt (see *Using subagents* in the [Cursor Subagents doc](https://cursor.com/docs/subagents)).
+- **`description`** — short text Agent uses to decide **when** to delegate; make it specific.
+- **`model`** — often `inherit` or `fast`; see the doc for other options.
+- **`readonly: true`** — sub-agent runs read-only (no edits / state-changing shell), good for audits and exploration-only roles.
+
 **Good sub-agent prompt:**
 
 ```
@@ -161,4 +196,4 @@ Avoid one mega-skill that does everything. Prefer:
 
 ---
 
-> **Next:** [05 — Hands-on guides](../05-guias-praticos/01-exercicio-ask-mode.md) — practice modes and flows on a real project
+> **Next:** [03 — PDF orchestration example](./03-pdf-orchestration-example.md) — skill + three sub-agents for a large PDF digest · [05 — Hands-on guides](../05-guias-praticos/01-exercicio-ask-mode.md) — practice modes and flows on a real project

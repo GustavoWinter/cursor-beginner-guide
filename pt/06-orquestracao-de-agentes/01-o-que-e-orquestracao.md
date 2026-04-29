@@ -15,7 +15,7 @@ Pense em tres camadas:
 | ------------- | ----------------------------------------------------------- |
 | **Skill**     | *O que fazer* — passos reutilizaveis, versionados no repo   |
 | **Agente**    | *Quem executa* no seu projeto — ferramentas, arquivos, PR   |
-| **Sub-agente**| *Quem ajuda em paralelo ou a parte* — pesquisa, leitura, resumo |
+| **Sub-agente**| *Quem ajuda em paralelo ou a parte* — ferramentas, MCP, terminal, edicoes conforme o escopo; muitas vezes exploracao ou resumo |
 
 Quando essas tres ideias estao alinhadas, voce nao depende de "sorte no prompt": voce **dirige** o fluxo.
 
@@ -39,9 +39,11 @@ O **agente principal** e a sessao interativa (por exemplo, no modo Agent) que te
 
 ### 3. Sub-agente — delegacao com contexto proprio
 
-**Sub-agentes** sao execucoes **separadas** do fio principal: outro contexto (ou outro foco), frequentemente **somente leitura** ou com objetivo unico (explorar o repo, revisar padroes, preparar um resumo). O resultado volta **condensado** para o agente principal, que decide o que aplicar.
+**Sub-agentes** sao execucoes **separadas** do fio principal: outro contexto (ou outro foco). Eles **nao** ficam limitados a ler arquivos — conforme a tarefa e o modo, podem **rodar comandos**, **chamar ferramentas MCP**, usar o **terminal** e **editar arquivos** como o agente principal. Um padrao comum continua sendo trabalho de **objetivo unico** (explorar o repo, revisar padroes, preparar um resumo) para a conversa principal nao inchhar. O que produzem volta **condensado** para o agente principal, que **integra** (e em refactors amplos costuma ser quem **aplica** mudancas para manter tudo coerente).
 
 **Na orquestracao:** sub-agente e **dividir para conquistar** — exploracao ampla ou tarefa longa sem encher o contexto da conversa principal com milhares de linhas.
+
+O Cursor ainda oferece **sub-agentes nativos** (por exemplo exploracao, bash, browser) e **sub-agentes customizados**: cada um e um arquivo Markdown com *frontmatter* YAML. No **projeto**, coloque esses arquivos em **`.cursor/agents/`** (nome da pasta em ingles `agents`, dentro de `.cursor` — nao e uma pasta `agentes` na raiz do repo; o produto carrega por esse caminho). Para todos os seus projetos, use `~/.cursor/agents/`. Campos e precedencia: [Subagents — documentacao Cursor](https://cursor.com/docs/subagents). Para um **modelo de arquivo** no estilo oficial (YAML + corpo), siga [02 - Orquestrando na pratica](./02-orquestrando-na-pratica.md).
 
 ---
 
@@ -55,7 +57,7 @@ O **agente principal** e a sessao interativa (por exemplo, no modo Agent) que te
 | Varias frentes de pesquisa em paralelo | **Sub-agentes** em paralelo |
 | Padrao global (estilo, stack)       | **Regras** (complementam tudo)   |
 
-Regras continuam sendo a base: dizem **como** o codigo deve ser. Skills dizem **o que fazer** em tarefas especificas. O agente principal **aplica** ambos. Sub-agentes **ajudam a informar** ou a preparar trabalho sem sujar o foco da sessao principal.
+Regras continuam sendo a base: dizem **como** o codigo deve ser. Skills dizem **o que fazer** em tarefas especificas. O agente principal **aplica** ambos. Sub-agentes **informam**, preparam ou executam acoes isoladas (incluindo MCP e terminal); o agente principal ainda **coordena** o que entra no plano compartilhado para a sessao permanecer coerente.
 
 ---
 
@@ -64,13 +66,13 @@ Regras continuam sendo a base: dizem **como** o codigo deve ser. Skills dizem **
 ```
 Regra (sempre) → Skill (se aplicavel) → Agente principal (edita)
                       ↑
-              Sub-agente (opcional: explorar / resumir)
+              Sub-agente (opcional: explorar / MCP / terminal / resumo)
 ```
 
 1. Garanta que **regras** cobrem o essencial do projeto.
 2. Para tarefas que se repetem, tenha uma **skill** com passos e checklist.
 3. Use o **agente principal** para implementar seguindo skill e regras.
-4. Acione **sub-agente** quando precisar de exploracao ampla ou entrega resumida antes de codar.
+4. Acione **sub-agente** quando precisar de exploracao ampla, preparacao com ferramentas (MCP, terminal) ou entrega resumida antes de codar.
 
 ---
 
@@ -91,7 +93,7 @@ Regra (sempre) → Skill (se aplicavel) → Agente principal (edita)
 | ----------------- | ---------------------------------------------------------- |
 | **Skill**         | Roteiro versionado; acionado sob demanda                   |
 | **Agente**        | Executor no workspace com regras, tools e contexto vivo  |
-| **Sub-agente**    | Ajuda lateral com contexto proprio; devolve resumo       |
+| **Sub-agente**    | Ajuda lateral com contexto proprio; ferramentas/MCP/terminal permitidos; devolve resumo ou repasse |
 | **Orquestracao**  | Combinar os tres (e regras) na ordem certa para cada tarefa |
 
 ---

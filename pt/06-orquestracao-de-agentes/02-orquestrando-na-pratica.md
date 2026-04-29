@@ -73,8 +73,43 @@ Trecho minimo de estrutura:
 
 Antes de editar, pergunte: "Preciso de **mapa amplo** do repo sem carregar tudo na conversa principal?"
 
-- **Sim** — use um sub-agente de **exploracao** (somente leitura): pedido claro do que descobrir (pastas-chave, padroes, arquivos similares).
+- **Sim** — use um sub-agente com foco em **exploracao**: pedido claro do que descobrir (pastas-chave, padroes, arquivos similares). Ele pode usar MCP, terminal e outras ferramentas; se quiser **so leitura** ou resumo sem editar, diga isso no pedido.
 - **Nao** — siga direto com o **agente principal** e a skill.
+
+Se o mesmo **papel de especialista** deve voltar em varias sessoes (verificador, debugger, revisao de seguranca), crie um sub-agente **customizado** em **`.cursor/agents/`** e versione a pasta no git. Lista completa de campos: [Subagents — Cursor](https://cursor.com/docs/subagents).
+
+#### Como criar um sub-agente customizado (formato do arquivo)
+
+Cada sub-agente customizado e **um arquivo Markdown** (por exemplo `.cursor/agents/security-auditor.md`). O **YAML no topo** (*frontmatter*) define `name`, `description` e, se quiser, `model`, `readonly`, `is_background`. **Tudo depois do segundo `---`** e o prompt que o sub-agente executa — o mesmo modelo da secao *File format* da [documentacao oficial](https://cursor.com/docs/subagents).
+
+Exemplo (troque nome do arquivo, `name` e corpo para o seu especialista):
+
+````text
+---
+name: security-auditor
+description: Security specialist. Use when implementing auth, payments, or handling sensitive data.
+model: inherit
+readonly: true
+---
+
+You are a security expert auditing code for vulnerabilities.
+
+When invoked:
+1. Identify security-sensitive code paths
+2. Check for common vulnerabilities (injection, XSS, auth bypass)
+3. Verify secrets are not hardcoded
+4. Review input validation and sanitization
+
+Report findings by severity:
+- Critical (must fix before deploy)
+- High (fix soon)
+- Medium (address when possible)
+````
+
+- **`name`** — identificador; invoque explicitamente com `/security-auditor` no prompt (veja *Using subagents* na [documentacao de Subagents](https://cursor.com/docs/subagents)).
+- **`description`** — texto curto que o Agent usa para decidir **quando** delegar; seja especifico.
+- **`model`** — comum usar `inherit` ou `fast`; veja a doc para outras opcoes.
+- **`readonly: true`** — roda sem poder editar nem rodar shell que mude estado; util para auditoria e exploracao so leitura.
 
 **Bom pedido para sub-agente:**
 
@@ -156,7 +191,7 @@ Skills **pequenas e compostaveis** sao mais faceis de acionar na ordem certa pel
 
 1. Defina **resultado final** e o que e **padrao** (regra) vs **processo** (skill).
 2. Mantenha `SKILL.md` com trigger, passos e validacao.
-3. Use **sub-agente** para exploracao/resumo; **agente principal** para edicao.
+3. Use **sub-agente** para exploracao, preparacao com ferramentas (MCP, terminal) ou resumo; **agente principal** para implementar e coordenar mudancas no repo.
 4. Itere skills quando o fluxo real do time mudar.
 
 ---

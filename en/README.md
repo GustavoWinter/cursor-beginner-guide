@@ -93,6 +93,7 @@ Skills, the main agent, and sub-agents work together. This part explains **when*
 | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | [01-agent-orchestration-overview.md](./06-orquestracao-de-agentes/01-agent-orchestration-overview.md) | Concepts: skill, agent, sub-agent, and how they fit             |
 | [02-orquestrando-na-pratica.md](./06-orquestracao-de-agentes/02-orquestrando-na-pratica.md)             | Step-by-step: design and test an orchestrated flow              |
+| [03-pdf-orchestration-example.md](./06-orquestracao-de-agentes/03-pdf-orchestration-example.md)       | Example: large PDF → topics, short & long summary via sub-agents |
 
 ---
 

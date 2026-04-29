@@ -15,7 +15,7 @@ Think in three layers:
 | --------------- | ---------------------------------------------------------- |
 | **Skill**       | *What to do* — reusable steps, versioned in the repo       |
 | **Agent**       | *Who acts* in your project — tools, files, PRs           |
-| **Sub-agent**   | *Who helps off-thread* — research, read-only, summaries   |
+| **Sub-agent**   | *Who helps off-thread* — tools, MCP, terminal, edits as scoped; often exploration or a digest   |
 
 When these three ideas line up, you rely less on “prompt luck” and more on **design**.
 
@@ -39,9 +39,11 @@ The **main agent** is the interactive session (for example in Agent mode) with a
 
 ### 3. Sub-agent — delegation with its own context
 
-**Sub-agents** run **separately** from the main thread: another context (or another focus), often **read-only** or single-purpose (explore the repo, scan patterns, produce a digest). Output comes back **compressed** for the main agent, which decides what to apply.
+**Sub-agents** run **separately** from the main thread: another context (or another focus). They are **not** limited to reading files — depending on task and mode, they can **run commands**, **call MCP tools**, use the **terminal**, and **edit files** like the main agent. A common pattern is still **single-purpose** work (explore the repo, scan patterns, produce a digest) so the main chat stays small. Whatever they produce comes back **compressed** for the main agent, which **integrates** it (and often owns applying repo-wide refactors so everything stays coherent).
 
 **In orchestration:** sub-agents are **divide and conquer** — wide exploration or long-running prep without stuffing the main chat with thousands of lines.
+
+Cursor also ships **built-in** sub-agents (for example explore, bash, browser) and lets you define **custom** ones as Markdown files with YAML frontmatter. For a project, put those files under **`.cursor/agents/`** (not a separate top-level folder such as `agentes` — the product looks in `.cursor/agents/` by convention). User-wide copies go in `~/.cursor/agents/`. See [Subagents — Cursor Docs](https://cursor.com/docs/subagents) for fields (`name`, `description`, `model`, `readonly`, `is_background`) and precedence vs `.claude/agents/` / `.codex/agents/`. For a **copy-paste file template** (official-style example), follow [02 — Orchestrating in practice](./02-orquestrando-na-pratica.md).
 
 ---
 
@@ -55,7 +57,7 @@ The **main agent** is the interactive session (for example in Agent mode) with a
 | Several parallel research tracks          | **Sub-agents** in parallel        |
 | Global standards (style, stack)           | **Rules** (they complement all) |
 
-Rules remain the foundation: they say **how** code should look. Skills say **what to do** for specific workflows. The main agent **applies** both. Sub-agents **inform** or prepare work without diluting the main session’s focus.
+Rules remain the foundation: they say **how** code should look. Skills say **what to do** for specific workflows. The main agent **applies** both. Sub-agents **inform**, prepare, or run isolated actions (including MCP and terminal); the main agent still **coordinates** what lands in the shared plan so the session stays coherent.
 
 ---
 
@@ -64,13 +66,13 @@ Rules remain the foundation: they say **how** code should look. Skills say **wha
 ```
 Rule (always-on) → Skill (if applicable) → Main agent (edits)
                         ↑
-            Sub-agent (optional: explore / summarize)
+            Sub-agent (optional: explore / MCP / terminal / digest)
 ```
 
 1. Make sure **rules** cover project essentials.
 2. For work you repeat, maintain a **skill** with ordered steps and a checklist.
 3. Use the **main agent** to implement following rules and skills.
-4. Bring in a **sub-agent** when you need broad exploration or a summarized handoff before coding.
+4. Bring in a **sub-agent** when you need broad exploration, tool-backed prep (MCP, terminal), or a summarized handoff before coding.
 
 ---
 
@@ -91,7 +93,7 @@ Rule (always-on) → Skill (if applicable) → Main agent (edits)
 | -------------- | ----------------------------------------------------------- |
 | **Skill**      | Versioned playbook; loaded on demand                      |
 | **Agent**      | Executor in the workspace with rules, tools, live context   |
-| **Sub-agent**  | Side helper with its own context; returns a digest          |
+| **Sub-agent**  | Side helper with its own context; tools/MCP/terminal OK; returns a digest or handoff          |
 | **Orchestration** | Combining all three (plus rules) in the right order    |
 
 ---
